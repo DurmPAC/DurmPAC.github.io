@@ -1,52 +1,301 @@
 <!DOCTYPE html>
-<html style="height: 100%;width: 100%;">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>DurmPAC</title>
+    <title>digital-zine</title>
     <meta property="og:type" content="website">
     <meta name="description" content="A Durham based art collective.">
-    <meta name="" content="">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Notable">
+    <link rel="stylesheet" href="https://use.typekit.net/ywj1sse.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
 </head>
 
-<body style="height: 100%;width: 100%;background: #0e0e0e;">
-    <nav class="navbar navbar-light navbar-expand-md" style="background: #e5c4d6;">
-        <div class="container-fluid"><a class="navbar-brand" style="font-size: 30px;font-family: 'Archivo Black', sans-serif;" href="index.html">DurmPAC</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="sawubona.html" style="color: rgb(31,31,31);font-size: 20px;">Project Information</a></li>
-                    <li class="nav-item" style="font-size: 20px;"><a class="nav-link" href="gallery.html" style="color: rgb(31,31,31);font-size: 20px;">Digital Gallery</a></li>
+<body><div class="d-flex justify-content-center align-items-center zine-pane" id="cover-sketch-div">
+        <h1 id="p5_loading">loading sawubona...</h1>
+    </div>
+    <div class="zine-pane" style="width: 100vw;height: 100vh;background: #0e0e0e;padding: 1% 5%;">
+        <h1 style="color: #9ad1d4;text-align: center;font-family: opake;margin-bottom: 24px;">notes from the editors:</h1>
+        <div class="d-flex flex-row justify-content-center align-items-stretch" style="height: 90%;">
+            <div class="col d-flex flex-column justify-content-start align-items-center" style="padding: 0px 3%;overflow:auto">
+                <h1 class="dpac-headings" style="border-bottom-style: solid;border-bottom-color: #9ad1d4;">What is Sawubona?</h1>
+                <p class="dpac-text">Sawubona is a greeting used by the Zulu people, which is the largest ethnic group in South Africa. The word roughly translates to “I see you” in English, however, it carries a much deeper meaning in its home community. Sawubona is a greeting that conveys connection and understanding above all else. It’s seeing someone for who they truly are, in all their beauty and all their struggles. It’s seeing their plight, hearing their voice, and promising to be there for them. It opens a dialogue between two people, where each person can feel safe sharing their needs and asking for support. We believe Sawubona perfectly describes our zine’s mission: to be your witness and to stand with you.<br><br>While researching the meaning of Sawubona, we found the work of&nbsp;<a href="https://rochemamabolo.com/about/" style="font-size: 3vh;">Roche Mamabolo</a>&nbsp;and&nbsp;<a href="https://www.globalonenessproject.org/library/interviews/sawubona" style="&quot;font-size: 3vh&quot;;font-size: 3vh;">Orland Bishop</a>&nbsp;to be particularly helpful resources.</p>
+            </div>
+            <div class="col d-flex flex-column justify-content-start align-items-center" style="padding: 0px 3%;overflow:auto">
+                <h1 class="dpac-headings" style="border-bottom-style: solid;border-bottom-color: #bc9eca;">What's our theme?</h1>
+                <p class="dpac-text">How does your power give you comfort, and how does your comfort give you power? This question is the main theme of Sawubona. We invited artists to reflect on how these aspects of life interact with each other throughout their creative process. To stir inspiration and introduce you to our theme, we've put together these guiding questions:<br></p>
+                <ul class="dpac-text" style="padding-left: 26px;border-left-style: solid;border-left-color: #bc9eca;margin: 0px;">
+                    <li>What does power mean to you?</li>
+                    <li>What does comfort mean to you?<br></li>
+                    <li>Where do you get power from?<br></li>
+                    <li>Does your power bring you comfort?</li>
+                    <li>Where do you find comfort?<br></li>
+                    <li>Does your comfort empower you?<br></li>
+                    <li>How have you used your power, and how do you want to use it?<br></li>
+                    <li>Where do you see power around you, and what form does it take?<br></li>
+                </ul>
+            </div>
+            <div class="col d-flex flex-column justify-content-start align-items-center" style="padding: 0px 3%;overflow:auto">
+                <h1 class="dpac-headings" style="border-bottom-style: solid;border-bottom-color: #9ad1d4;">Where's the zine?</h1>
+                <p class="dpac-text" style="margin-bottom: 8px;">It's right below you, waiting to be explored, interpreted, pondered, and above all, enjoyed. Scroll through at your leisure, and we'll see you on the other side.<br></p>
+                <p class="dpac-text" style="margin-bottom: 8px;">If you need a map for the journey, please refer to the table of contents below. Clicking on any artist's name will take you to their piece<br></p>
+                <div></div>
+                <ul class="list-unstyled text-start">
+                    <li><a href="#c-jae">C.jae</a></li>
+                    <li><a href="#vyshu-sabbi">Vyshu Sabbi</a><br></li>
+                    <li><a href="#ankita-nandi">Ankita Nandi</a><br></li>
+                    <li><a href="#x-ramos-lara">x. ramos-lara</a><br></li>
+                    <li><a href="#alexis-king">Alexis King</a></li>
+                    <li><a href="#robin-gao">Robin Gao</a></li>
+                    <li><a href="#jessee-steele">Jessee Steele</a><br></li>
+                    <li><a href="#brendan-stow">Brendan Stow</a><br></li>
+                    <li><a href="#isabella-gamez">Isabella Gamez</a><br></li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <main class="d-flex flex-column justify-content-start align-items-center align-content-center" style="padding: 0px 24px;margin: 20px 0px;">
-        <h2 style="color: #f8f9fa;max-width: 600px;"><span style="text-decoration: underline;">Our Mission</span></h2>
-        <p style="color: #f8f9fa;font-size: 24px;max-width: 600px;">Sawubona is the first project from a newly formed group known as the Durham Powerful Arts Collective. As our name implies, we believe that art is a powerful form of expression that can bring healing and change. In the midst of a devastating global pandemic, America's continued struggle with racism from the individual to the systemic level, and an election that rocked the nation, we realized that some members of our community have a lot to say with nowhere to say it. We've set out to amplify these voices by providing a space for artists that centers BIPOC and LGBTQ+ people, with a theme that encourages them to explore and share two of the most important and most fleeting aspects of one's life in 2020: power and comfort.<br></p>
-        <h2 style="text-align: left;color: #f8f9fa;max-width: 600px;"><span style="text-decoration: underline;">Our Theme</span></h2>
-        <p style="color: #f8f9fa;font-size: 24px;margin-bottom: 8px;max-width: 600px;">How does your power give you comfort, and how does your comfort give you power? This question is the main theme of Sawubona. We invited artists to reflect on how these aspects of life interact with each other throughout their creative process. To stir inspiration and introduce you to our theme, we've put together these guiding questions:<br></p>
-        <ul style="color: #f8f9fa;font-size: 20px;text-align: left;padding-left: 50px;margin-bottom: 32px;padding-right: 30px;max-width: 600px;">
-            <li style="max-width: 600px;">What does power mean to you?&nbsp;</li>
-            <li style="max-width: 600px;">What does comfort mean to you?&nbsp;</li>
-            <li style="max-width: 600px;">Where do you get power from? Does your power bring you comfort?</li>
-            <li style="max-width: 600px;">Where do you find comfort? Does your comfort empower you?</li>
-            <li style="max-width: 600px;">How have you used your power? How do you want to use it?</li>
-            <li style="max-width: 600px;">Where do you see power around you? What form does it take?&nbsp;</li>
-            <li style="max-width: 600px;">How do you use power to bring comfort to yourself or others, or how would you?</li>
-        </ul>
-        <h2 style="text-align: left;color: #f8f9fa;max-width: 600px;"><span style="text-decoration: underline;">The Meaning of Sawubona</span></h2>
-        <p style="color: #f8f9fa;font-size: 24px;max-width: 600px;">Sawubona is a greeting used by the Zulu people, which is the largest ethnic group in South Africa. The word roughly translates to “I see you” in English, however, it carries a much deeper meaning in its home community. Sawubona is a greeting that conveys connection and understanding above all else. It’s seeing someone for who they truly are, in all their beauty and all their struggles. It’s seeing their plight, hearing their voice, and promising to be there for them. It opens a dialogue between two people, where each person can feel safe sharing their needs and asking for support. We believe Sawubona perfectly describes our zine’s mission: to be your witness and to stand with you.<br></p>
-        <p style="color: #f8f9fa;font-size: 24px;max-width: 600px;margin-bottom: 32px;">While researching the meaning of Sawubona, we found the work of&nbsp;<a href="https://rochemamabolo.com/about/" target="_blank" style="color: #e5c4d6;max-width: 600px;">Roche Mamabolo</a>&nbsp;and&nbsp;<a href="https://www.globalonenessproject.org/library/interviews/sawubona" target="_blank" style="color: #e5c4d6;max-width: 600px;">Orland Bishop</a>&nbsp;to be particularly helpful resources.</p>
-        <h2 style="text-align: left;color: #f8f9fa;max-width: 600px;"><span style="text-decoration: underline;">So What's a Zine?</span></h2>
-        <p style="color: #f8f9fa;font-size: 24px;max-width: 600px;">Historically, zines typically contain unpopular opinions and radical thoughts. In the 1970s, the punk rock scene began using the medium as a way to promote bands and share their anti-authoritarian message. Feminism found its way into the zine scene through the riot grrrls, an underground feminist punk movement. Bands like Bikini Kill used zine publications and their message of empowerment to encourage women to venture out and try new hobbies such as making music. Zines are thriving in today’s digital age as the internet has made it virtually free to create and distribute publications with the use of a link. The number of consistent publications has increased with time, and zines cover more genres and themes than ever before. Digital zines are able to include more forms of art like auditory and video mediums, which allow for more creative expression.<br></p>
-    </main>
+    </div>
+    <div class="zine-pane" style="width: 100vw;height: 100vh;background: #0e0e0e;border: 30px double #bc9eca ;">
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;width: 100%;height: 100%;">
+            <p style="color: #c6c6c6;font-family: p22-klauss-kursiv;font-size: 50px;text-align: center;width: 70%;">“I am no longer accepting the things I cannot change. I am changing the things I cannot accept.”&nbsp;</p>
+            <p style="max-width: 500px;color: #c6c6c6;font-family: typeka;font-size: 28px;">- Angela Y. Davis</p>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-between align-items-stretch zine-pane" id="c-jae" style="padding: 3% 5%;">
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;height: 100%;max-height: 100%;max-width: 38%;">
+            <div style="width: 80%;text-align: right;border-top: 6px solid #bc9eca;border-bottom: 6px solid #bc9eca;padding: 10px 0px;">
+                <h1 class="artist-name" style="width: 100%;">C.jae</h1>
+                <h3 class="pnoun-age">she/her, 18</h3>
+                <p class="statement">"I wanted to write a poem inspired by the theme of power and comfort. Growing up in Durham, while Black prosperity was showcased all around me, you hear the story of abundance and growth but not of self-care or taking it easy. As Black folks, we are often pushed to overcome and pursue greatness while overworking ourselves to get to a spot that our 'counterparts' were guaranteed. As you chase after your desires, it’s necessary to rest and slow down to heal yourself as you continue to be great."&nbsp;<br></p>
+                <p class="artist-link">find C.jae on instagram:&nbsp;<a href="https://www.instagram.com/cynnakkuma/" target="_blank">@cynnakkuma</a><br></p>
+            </div>
+        </div>
+        <div class="col d-flex flex-column justify-content-start align-items-start" style="padding: 0px;height: 100%;max-height: 100%;max-width: 50%;overflow: auto;">
+            <h2 class="written-title">blæk stagnation</h2>
+            <p class="text-nowrap poem-body" style="max-width: 100%;overflow: scroll;border-left: 5px solid #355f6b;padding-left: 8px;">there is everlasting warmth &amp; pleasure in stagnation<br>cradling my head, soothing me to sleep as though a lullaby<br>the tale of being one of the greats whose name verberates off the walls goes-<br>‘08, TV on, jollof on the stove, incense burning, ancestral laughter, <br>&amp; i look to see up on the screen<br>Beyoncé, Venus, Serena, LeBron, Kobe, &amp; little Black kids looking at them<br>with hopes to obtain their power wettening their big brown eyes<br>this tale proceeds in fermented stress in crafting your being<br>the way you’ve plated for your own nutrients &amp; ease<br>breakfast, lunch, dinner, afternoon tea<br>allow yourself to rejoice in your vessel &amp; love yaself, please<br>for every Black child foretold the vociferated survivalist,<br>&amp; for every Black child whose been discouraged by their conditioned endeavors,<br>&amp; for every wounded inner Black child who is now grown as hell &amp; led astray<br>from the failure to explore their own personal pursuits:<br>embrace the mellow. there is comfort here.<br>you were already gifted power &amp; luxe<br>ain’t you tired of smashing the glass ceiling<br>&amp; pushin’ n perseverin’ n pursuing?<br>you betta embrace flipping over in your slumber &amp;<br>define your desires, treasure those hobbies, dance by yaself.<br>damn me for being so comforted by lazy days for i see stars cascading my body<br>&amp; brushing my naps as i smack my lips to declare my desires<br>it is claimed in my narrative<br>because while Black fame &amp; fulfillment is a cadence of a magickal thing<br>Black stagnation lies in your bed &amp; cuddles as you turn about your dreams -<br>not for the verberating name, but for the promise of greatness that every Black child<br>was taunted &amp; chased<br>after the endorphin pulsed high from that haul,<br>stretch your legs &amp; invest in your innermost prosperity.<br>cool down.<br></p>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-between align-items-stretch zine-pane" id="vyshu-sabbi" style="padding: 3% 5%;">
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;height: 100%;max-height: 100%;max-width: 45%;">
+            <div style="width: 80%;text-align: right;border-top: 6px solid #bc9eca;border-bottom: 6px solid #bc9eca;padding: 10px 0px;">
+                <h1 class="artist-name">Vyshu Sabbi</h1>
+                <h3 class="pnoun-age">she/her, 16</h3>
+                <p class="statement">"This power of the narrator's self that she is fully capable of possessing comes (only) from within. This is what gives her comfort as she realizes her own power by the end of the poem when she looks at her reflection."<br></p>
+                <p class="artist-link">find Vyshu Sabbi on instagram:&nbsp;<a href="https://www.instagram.com/vyshusartt" style="width: 100%;" target="_blank">@vyshusartt</a><br></p>
+            </div>
+        </div>
+        <div class="col d-flex flex-column justify-content-start align-items-start" style="padding: 0px;height: 100%;max-height: 100%;overflow: auto;max-width: 50%;">
+            <h2 class="written-title">Evil People</h2>
+            <p class="text-nowrap poem-body" style="max-width: 100%;overflow: scroll;padding-left: 8px;border-top: 4px solid #9ad1d4 ;border-left: 4px solid #9ad1d4 ;">Evil people with all their lies<br>They shut their ears, divert their eyes<br>Rigid in their own stubborn walls<br>Close their gates, maintain their drawls<br>Little to no effort they put in their words<br>Yet still this naive mind reach towards<br>The same old duplicities it undoubtedly believes<br>Get down from your towers and hear these pleas<br>Or maybe it is I who must remove this lens<br>From which I unceasingly justify these trends<br>All my excuses and not a single one falls<br>Remotely close to why my skin crawls<br>Fucking wake up and abandon the abyss<br>You don’t need anyone to validate this<br>You really thought you had this all figured out<br>But in reality you’re just bathing in doubt<br>Stuck in this loop once more returned<br>To that same little girl blind to what she, herself, had earned<br>There she stood, distrait and reserved<br>Longing for that place she had always deserved <br>For it is here to which she would constantly strive<br>Lose this and she wouldn’t survive<br><br>Evil people dragged her attention<br>But they didn’t see that fourth dimension<br>In which her adamantine spirit pierces through<br>The lies and the cries and the furtively askew<br>Blind to the evil that she knew was right there<br>Only appearing when it seemed the most rare<br>The more she looked the less she understood<br>Of whether what couldn’t be true really would<br>And maybe it was indeed just all in her head<br>But she could not ignore the rising dread<br>Of feeling reality’s slap across her face<br>Invading all her own damn space<br><br>Nothing compares to that fresh breath<br>When she no longer felt the living death<br>By the phoneys and the fakers whose deceit never ceased<br>By those who once had made her heart beat<br>For the first time, she closed her eyes and affirmed<br>The adoring feeling of genuine warmth<br>For the first time, she saw when she looked in the mirror<br>Her very own eyes reflected back, clearer.<br></p>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-around align-items-center zine-pane" id="ankita-nandi" style="padding: 3% 5%;">
+        <div class="col d-flex flex-column justify-content-start align-items-center" style="max-width: 50%;overflow: auto;max-height: 100%;">
+            <h2 class="written-title" style="border-bottom: 4px solid #355f6b;">Monsters in the Paint</h2>
+            <p class="story-body"><em>Swish</em>. The blue paint bleeds into the yellow, but she doesn’t worry about it, moving onto the next stroke. The water was irrelevant anyways, only there to provide a background to the monster in the forefront.<br><br><em>Swish</em>. The monster is leaping out of the canvas now, a gaping jaw showing rows of glimmering teeth. She feels them against her neck, a cold breath. But she moves onto the scales, hardening them beneath her fingers. Jade scales shine as she outlines each with a thin line of black, making each separate from the next. Her mom calls from behind her, dinner only five minutes away. She ignores her and adds to the scales; if she doesn’t get this done now she won’t until tomorrow. <br><br><em>Swish</em>. Claws reach out to her, and she just barely ducks her head to get more paint on her brush. Her hair flies in her face and she’s taken back to a beach, a rocky shoreline in the distance. Blinking, she sees her still unfinished canvas and goes back to the surrounding sea, ignoring the monster in the forefront for now. <br><br>Five minutes have passed but she doesn’t notice, dropping her brush as she hears screams from friends instead. They echo in her ears. Turning, she finds herself on sandy shores, looking into jade eyes, the pupils growing larger the longer she looks at it. Claws reach out to her cheek, cool to the touch. <br><br>And then she falls, her knees scratching against the coarse sand, the screams only intensifying. She sees scarlet streaks and then, silence. <br><br>She awakens, curled up into a ball. Her paintbrush is brushing her nose, a black spot at the tip. Her mother’s face is just in front of her, blowing gently as though to wake her up from a nap. She glances at the painting laying across the stool now, having fallen from its perch on the easel. Her jade eyes gleam and lips curl into a smile. Jagged teeth are all the painter can see as her mom says, “Let’s go eat dinner now, shall we?”<br></p>
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;height: 100%;padding-top: 20px;max-height: 100%;max-width: 40%;">
+            <div style="width: 80%;text-align: right;border-top: 6px solid #bc9eca;border-bottom: 6px solid #bc9eca;padding: 10px 0px;">
+                <h1 class="artist-name" style="width: 100%;">Ankita Nandi</h1>
+                <h3 class="pnoun-age">she/her, 19</h3>
+                <p class="statement">"Art is a powerful medium and allows insight into the artist’s conscience and thoughts. Family is probably one of the most common origins of comfort, as family, found or blood, dictates one’s idea of home. However, this story takes away the comfort once found with family, specifically the mother in this case. As the story progressed, power was taken from the artist, though they still had the power of their art to see what may have been a traumatic event. Their loss of power led to a loss of comfort, and in this case we see how comfort was not found in family; comfort and power that may have come from familial relations instead came from the artist’s connection to their art. Their art became both their escape from and looking glass into the hostile environment they found themselves in."<br></p>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-between align-items-center zine-pane" id="x-ramos-lara" style="padding: 3% 5%;">
+        <div class="col d-flex flex-column justify-content-center align-items-center">
+            <div style="width: 80%;text-align: right;border-top: 6px solid #bc9eca;border-bottom: 6px solid #bc9eca;padding: 10px 0px;">
+                <h1 class="artist-name" style="width: 100%;">x. ramos-lara</h1>
+                <h3 class="pnoun-age">they/she, 19</h3>
+                <p class="statement" style="width: 100%;">"To make it simple: I'm a flaming fucking faggot, and I take pride in this. My queerness has been shamed for the longest time, but I've recently begun to find power in my identity as a non-binary queer, and I refuse to have that taken away from me anymore. This poem reflects the power I find in my fat body and my ability to accept the changes I'm going through physically and sexually. I don't believe queerness and transness should ever be censored, so let that shit roam free."<br></p>
+                <p class="artist-link" style="width: 100%">find x. ramos-lara on venmo:&nbsp;<a href="https://account.venmo.com/X-Ramos-Lara" style="width: 100%;" target="_blank">@X-Ramos-Lara</a><br></p>
+            </div>
+        </div>
+        <div class="col d-flex flex-column justify-content-start align-items-start" style="overflow: auto;padding-left: 5%;">
+            <h2 class="written-title">passion</h2>
+            <p class="text-nowrap poem-body" style="border-left: 4px solid #355f6b;padding-left: 6px;">i would sacrifice my first born to the devil herself<br>if it meant getting to spend five more minutes with you<br>in a space plagued with the breaths of iconoclastic serpents<br><br>oh to be able to taste the fingertips of an artist<br>who only knows how to paint with the temptation of christ<br>the very thing&nbsp;&nbsp;&nbsp;the very flavor that brings me to your altar<br><br>i am the high priest&nbsp;&nbsp; the prophet<br>to what venus has ordained her final resting place&nbsp;&nbsp;&nbsp; your body<br></p>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-around align-items-center zine-pane" style="padding: 3% 5%;">
+        <div class="col d-flex flex-column justify-content-start align-items-center" style="max-width: 50%;overflow: auto;max-height: 100%;">
+            <h2 class="written-title" style="color: #fcfaee;border-bottom: 4px solid #355f6b ;">The Woods</h2>
+            <p class="story-body">Gabe and I went outside a lot. The house was too stifling, and Mom never noticed when we were there or not anyways. Whenever we stepped out, the forest seemed to greet us. Even if I was dragged along, or Gabe was scowling at the ground, the path remained open. I could only mean to step outside for a moment, yet find myself running inside with Gabe on my heels.&nbsp;Soon, “we’re going outside” became synonymous with “we’re going to the woods.” There wasn’t much to do in the deadbeat town; the woods were the only form of entertainment. Going outside in the winter was the best, when we chased each other and made snow angels or threw mud at each other before heading inside to clean up. <br><br>The forest didn’t have a clear entrance to other, maybe older, individuals, but a tan trail always emerged from the thick trunks whenever we drew near. Squirrels often darted across the grass in the meadow as we approached, returning to their abodes in the trees. Chirps persisted throughout the meadow, but it was never the same bird, changing almost every day. As we got closer to the trees we would crunch over endless fallen leaves in the meadow, regardless of season. But once we stepped inside, it was silent. At least until I tripped over that stupid gnarled root and then the animals would start moving again. <br><br>During the summer, walking in the woods was a dance. One step there, another leaping away. The roots acted with us and turned our small steps into balance contests, and Gabe and I ended up separating as I would bounce away while he stood still. I only went down a few paths though, and then we would find something off trail in the same area to amuse ourselves with. Usually Gabe crouched by the creek, staring at still waters, while I climbed a tree over his head. I would drop acorns on him, but he would never notice until one fell into the water. Only then would he startle and finally look up to see me lounging above him. Once he climbed up the tree and sat next to me, we would have contests to see who could throw the acorns and twigs the furthest. I always won.<br><br>When school started up again, we would bring our homework to do in the trees. The canopy provided us dappled light, but the light was enough until it got too dark to avoid the house anymore. Once Gabe climbed down, I would put my stuff away and we would make the daily walk back to the opening of the trail. I got good at avoiding the gnarled root in the dark soon after the school year started, because Gabe didn’t wait for me when it got that late. If I screamed he would stop, but never otherwise. Mom was annoyed at us since we continued our woodland ventures past the summer, but she never gave us more than a hard look when we sat down for dinner. Dad never cared, only making sure we weren’t trekking dirt into <br>the house. <br><br>Rarely was I ahead of Gabe on the way back to the house. Mom had told us to come back early that day, but it turned out being later than usual when my backpack ripped while I was packing. Gabe helped me clean up, and we started leaving. Gabe wandered over to the stream, a new daily habit of his, but I proceeded to the exit. The trail always welcomed us, but that night there was no movement, no acknowledgement of the home we had found in the tangled roots and chipping bark. The entrance didn’t close, decorated with the same leaves we stepped on during the way in, and the leaves remained still, no breeze in the air. <br><br>Once at the mouth, I realized there were no more footsteps behind me. “Gabe?” As I called into the woods, a wind picked up. But still, no movement, no sounds. “Gabe!” The sun was almost completely behind the house at this point, but I couldn’t leave my brother behind in the woods. <br>But the forest could push me out. I fell back into the dark meadow and the woods closed on me for the first time in months. I shivered from the chill of the night, but I still needed to find Gabe. I could hear the house door opening only a small distance away. I pictured my mom poking her head out only to find a missing son and a daughter sitting on the ground, books spilling out of her bag. But she didn’t poke her head out, only called to come inside. When Gabe still didn’t come from the trees, I retreated into the house. My mom’s hard stare pierced my back, but I retreated to my room and searched for a new backpack to avoid her. When I went downstairs again, she didn’t ask about Gabe, indifferent to his absence. We ate dinner with an empty seat and silence. After eating, I retreated to our room without another word. <br><br>I lay awake in our room after dinner, alone and failing to sleep. Gabe’s bed was closer to the open window, curtains buffeting the breeze. The empty bed taunted me, and when I finally passed out into a dreamless sleep, I woke up more exhausted than the previous day. The bed remained empty as I got ready for school, and was the same when I returned. I tried to bring it up to my mom when I came back the second day without Gabe, but she only looked past me to the forest. We called the police the next day, and spent hours combing through the woods looking for any sign of Gabe. My dad had come home early from work, and my mom had left the house for once. Even after the police gave up after the first day, we spent the weekend going further and further into the forest, leaving behind a trail of acorns to make sure we didn’t get lost. Each day ended with me curling into my bed, avoiding looking at Gabe’s bed as tears streamed down my face. My parents stopped after a week.&nbsp;<br><br>I still went to the forest everyday, leaving gifts in every tree cranny. Apples and oranges would be gone when I returned each day, but books remained untouched after weeks. I would stay and listen to the squirrels until they stopped scurrying, only leaving once I could see Orion’s Belt above me. Mom stopped calling for me to return after the first week since Gabe disappeared, and Dad was home even less than before. <br>Days turned into weeks turned into months turned into years. Gabe’s bed remained empty but his desk never gathered dust with how often I wiped it. I brought gifts to the forest still, but now there were treats for the squirrels and birds that would wander by the trail. Acorns started lining the paths and occasionally feathers would find themselves landing at my feet. Gabe’s absence was soon filled by the forest animals, though I still brought books to leave for weeks at a time before I returned them to my room. They would look well-worn, but that was mainly due to the mud stains that appeared each time. <br><br>At the beginning, whenever people asked where Gabe was, my parents said he was staying with relatives out-of-town for medical reasons. By now, everyone knows not to ask me about my brother, it’s not like I would give them an answer anyways. Close to the start of yet another school year and more teachers missing “Gabe Flannery” on their rosters, the forest grew quiet. Even when the sun was at its highest, a time for chittering and rushing water to strike my ears, the most noise was from the squirrels starting to hoard their acorns for the fall. The silent nights turned into repressing spaces and I retreated to the house every night earlier each night until I stopped going to the forest altogether. If it wasn’t going to give me the comfort I needed over the last few years, I wouldn’t give it my time. The forest was taunting me for what I had lost. I refused to let it win. <br><br>However, that didn’t last more than a week; staying in an empty room was worse than going to a silent forest. I hadn’t gone near the window during my self-isolation. If I had, maybe I would’ve noticed the squirrels leaving acorn mounds in the meadow, and feathers floating up to the windowsill. When I went outside, the forest didn’t pull me but pushed me. The acorns led to another entrance near the neighboring house, twined branches forming an arch. <br><br>Gabe and I used the one path behind our house because it was easy to hear Mom call us for dinner, and easy to run back to if we needed. Although I entered at noon, this new path was darker and smelled sour like rotting grass, not the homely earth of the other trail. Squirrels that followed me went around my ankles and pushed me into the woods. There was no root to trip over, and no running creek in the foreground. Gabe and I never knew about this path because it was too silent to not bring chills. Although it had rained twice in the past week, the path was made of cracked dirt and weeds growing along the edges. <br><br>I saw the jacket first. It was dark blue and almost faded into the trees, but it was scrounged up enough to stand out among the smooth trail. He never used to take it off, even when it started getting too small once we got to middle school. Around a bend in the path, I saw a shoelace adorned with a ladybug pin we had gotten during a field trip once. I went further into the path with each new item I found, until I held his shoes, jacket, and clothes. <br><br>I stopped at a clearing, the center of which held his backpack. Unlike the clothing in my arms, it looked clean, not an inch of dirt on it. It was as full as it was the last time I saw Gabe. This time, the forest pushed me into the clearing and I opened the bag, hands shaking. His books were in the ever pristine condition they were always in, never one to let mud to get on them. Squirrels lined the edges of the clearing, watching as I closed the bag again and set the clothes down. There were no other remnants from that day in the woods, nothing else I could say was Gabe’s. Putting on his bag didn’t help as I remembered our adventures. But when I walked back to the entrance and to our house, the forest was moving again. Birds chirped and I heard the creek running. Exiting the woods, I turned back to find no arch, only a space between the trees. The acorns in the meadow were gone, and squirrels ran into the woods and hoarded acorns just like the week before. I carried whatever was left of Gabe, but no one else noticed. Mom was as silent as ever, Dad still wasn’t home. Dumping everything on his desk relieved myself of the weight. Looking at the empty bed, it was about time I stripped it and moved it. It wasn’t going to be filled anytime soon.<br></p>
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;height: 100%;padding-top: 20px;max-height: 100%;max-width: 40%;">
+            <div style="width: 80%;text-align: right;border-top: 6px solid #bc9eca;border-bottom: 6px solid #bc9eca;padding: 10px 0px;">
+                <h1 class="artist-name" style="width: 100%;">Ankita Nandi</h1>
+                <h3 class="pnoun-age">she/her, 19</h3>
+                <p class="statement" style="width: 100%;">"Childhood is always an interesting concept to explore due to the openness and innocence children possess. As in the story, the narrator and her brother make the nearby woods their new safe haven and a place to escape the numbness of adulthood; it becomes a place of comfort. However, as is common in many scenarios, trauma can take away comfort that may have previously existed, and the people in charge no longer have power over their situation. Yet, sometimes the people involved can reclaim their power over something and once again find comfort in the thing that took it away in the first place. This is a story about moving on and refinding your home when it’s been taken away from you, and in a sense, reclaiming your comfort in a situation you were once powerless."<br></p>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-row align-items-stretch zine-pane" id="alexis-king">
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;height: 100%;padding-top: 20px;max-height: 100%;max-width: 50%;">
+            <div style="width: 80%;text-align: right;border-top: 6px solid #bc9eca;border-bottom: 6px solid #bc9eca;padding: 10px 0px;">
+                <h1 class="artist-name" style="color: #fcfaee;font-size: 50px;text-align: right;width: 100%;">Alexis King</h1>
+                <h3 class="pnoun-age" style="color: #fcfaee;font-size: 20px;">she/her, 19</h3>
+                <p class="statement" style="width: 100%;">"I realized that over the course of my life, I have often preferred, been more interested in or had my attention called most by the arts and expressions of other languages and cultures. Since coming to college and studying them more closely, I have also taken an interest in the tale of colonialism that appears in unexpected places. This is one way that I enjoy critiquing the history of the art I love and consume. This piece generally explores the beautiful, difficult, impossible journey of language-learning. It also illustrates the conflict of this pursuit as an attempt at connecting back with one’s original culture and trying to define a new identity, especially as a member of the African Diaspora whose language, culture and even genetic makeup were decided for them. I think of it as a conscious acknowledgement of the oxymoron that is my life passion."<br></p>
+            </div>
+        </div>
+        <div class="col d-flex flex-column justify-content-start align-items-start" style="padding: 0px;height: 100%;padding-top: 20px;padding-left: 5%;max-height: 100%;max-width: 50%;overflow: auto;">
+            <h2 class="written-title"> ~ لغة Languages لغة ~</h2>
+            <p class="text-nowrap poem-body" style="max-width: 100%;overflow: scroll;padding-left: 10px;border-left: 5px solid #355f6b;">I find comfort in calling on invasion;<br><br>My white words, American ways and English DNA<br>squirming beneath melanated skin,<br>pushing against rebellious veins that yearn<br>to learn another place<br><br>I find power in criticism<br>and comfort in my anguished hunger,<br>I find comfort in controversy<br>and power in my ode to failure<br><br>I find comfort in loving what I can never possess,<br>what was never once mine and barely exists.<br><br>I find comfort in discomfort,<br>the alluring and eerie of “uncharted” territory<br>I find comfort in the Devil’s Advocate<br>in borders that harden with the<br>shedding of imperialist ignorance<br>I find comfort entre mis acentos, <br>entre mis palabras que no pueden <br>ser entendidas por todos<br><br>I find comfort in the power of the page<br>in the cerebral shift to astral planes<br>en agarrando mi identidad, y así escondiéndola<br>entre la de otro...<br><br>Power in questioning the talent that’s grown<br>in an environment that’s not its home<br>In that sensational physicality, <br>the experience of the declaration<br>I find comfort in question,<br>I find power in rejection<br><br>My solace manifests itself in unintelligible expression.<br></p>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-around align-items-center zine-pane" id="robin-gao" style="padding: 3% 5%;">
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="max-height: 100%;">
+            <div style="max-height: 100%;"><img src="assets/img/art/cdrg.jpg" style="max-height: 80vh;">
+                <div class="d-flex flex-row justify-content-between" style="width: 100%;">
+                    <h1 class="image-title" style="margin: 0px;padding-right: 8px;">Civic Duty</h1>
+                    <p class="statement" style="border-bottom: 4px solid #bc9eca;padding-bottom: 6px;">"A proudly-masked Dalia stands undisturbed by the rush of an ambulance behind her." (2020)</p>
+                </div>
+                <h3 class="pnoun-age">Robin Gao, she/her, 18</h3>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center align-items-center zine-pane" style="padding: 3% 5%;">
+        <div class="col d-flex flex-column flex-grow-0 justify-content-start" style="height: 100%">
+            <h1 class="image-title" style="width: 100%;">Dalia, MUA</h1><img src="assets/img/art/dmrb.jpg" style="max-height: 75%;">
+            <p class="statement">"Dalia completes her gold eye makeup look with eyeliner. She's clearly no makeup rookie with this bold and exciting palette. She's in command for the night, and she knows what type of energy she wants to attract." (2019)</p>
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;height: 100%;padding-top: 20px;max-height: 100%;max-width: 30%;">
+            <div style="width: 80%;text-align: right;border-top: 6px solid #bc9eca;border-bottom: 6px solid #bc9eca;padding: 10px 0px;">
+                <h1 class="artist-name" style="color: #fcfaee;font-size: 50px;text-align: center;width: 100%;">Robin Gao</h1>
+                <h3 class="pnoun-age" style="color: #fcfaee;font-size: 20px;text-align: center;">she/her, 19</h3>
+                <p class="artist-link" style="text-align: center;">find Robin Gao on instagram:&nbsp;<a href="https://www.instagram.com/robinlgao/" style="width: 100%;" target="_blank">@robinlgao</a><br></p>
+            </div>
+        </div>
+        <div class="col d-flex flex-column flex-grow-0 justify-content-start" style="height: 100%">
+            <h1 class="image-title" style="width: 100%;font-size: 4vh;">Mary, 21st Century Queen of Scotts</h1><img src="assets/img/art/mary.jpg" style="max-height: 75%;">
+            <p class="statement" style="text-align: right;">"With a confident and regal presence illuminated by the mirror, Mary looks — and feels — ready to go out with the girls." (2019)</p>
+        </div>
+    </div>
+    <div class="d-flex flex-row align-items-stretch zine-pane" id="jessee-steele">
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;height: 100%;padding-top: 20px;max-height: 100%;max-width: 50%;">
+            <div style="width: 80%;text-align: right;border-top: 6px solid #bc9eca;border-bottom: 6px solid #bc9eca;padding: 10px 0px;">
+                <h1 class="image-title" style="width: 100%;">Lucid</h1>
+                <h3 class="pnoun-age">Jessee Steele, he/him, 19</h3>
+                <p class="statement" style="width: 100%;">"This is a quick, somewhat gestural sketch of my friend. Importantly, she is not looking at the viewer, and in general, looks somewhat disinterested in the viewer. She is looking down at something to side, though--a glance that conveys vertical power. While this does not imagine new, healthy forms of power dynamics, it is a visual exploration of how many people feel comfort by having power above or over other people. The power that's expressed here is&nbsp;<strong>contingent</strong>&nbsp;on others' lack of power."<br></p>
+                <p class="artist-link">find Jessee Steele on instagram:&nbsp;<a href="https://www.instagram.com/jessee_steele_art/" style="width: 100%;" target="_blank">@jessee_steele_art</a><br></p>
+            </div>
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 30px;height: 100%;max-height: 100%;max-width: 50%;overflow: auto;"><img src="assets/img/art/lucid.jpg" style="max-height: 90%;max-width: 100%;"></div>
+    </div>
+    <div class="d-flex flex-row align-items-stretch zine-pane">
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 30px;height: 100%;max-height: 100%;max-width: 50%;overflow: auto;"><img src="assets/img/art/deja.jpg" style="max-height: 90%;max-width: 100%;"></div>
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;height: 100%;padding-top: 20px;max-height: 100%;max-width: 50%;">
+            <div style="width: 80%;text-align: right;padding: 10px 0px;border-top: 6px solid #9ad1d4 ;border-bottom: 6px solid #9ad1d4 ;">
+                <h1 class="image-title" style="width: 100%;">Deja</h1>
+                <p class="statement" style="width: 100%;">"I find my inspiration in my emotions and instinctive urges. My art is how I express my soul mission. With this objective in mind, I structure my art around my life and how it changes for the good and the bad. My art reflects my interactions with the people I meet. I use those experiences to create something that I will enjoy.<br><br>I focus on what I want to learn. Knowledge can awaken every possibility. I have a wide range of interests. I enjoy making both realistic and abstract artworks. I am equally skilled at creating 2-dimensional and 3-dimensional designs. Currently my favorite medium is gouache but I also enjoy painting with acrylics and drawing with pen and ink. Over the past five years my art journey has changed and I’ve taken control of my creative process. What I want to create is totally my decision."<br></p>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-row align-items-stretch zine-pane">
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;height: 100%;padding-top: 20px;max-height: 100%;max-width: 50%;">
+            <div style="width: 80%;text-align: right;border-top: 6px solid #bc9eca;border-bottom: 6px solid #bc9eca;padding: 10px 0px;">
+                <h1 class="image-title" style="width: 100%;">Flower Power</h1>
+                <h3 class="pnoun-age">Jessee Steele, he/him, 19</h3>
+                <p class="statement" style="color: #e0e0e0;font-family: eb-garamond, serif;;;font-size: 20px;font-size: 18px;text-align: right;width: 100%;">"This piece explores the importance of positioning and posture in how we communicate power dynamics and comfort. The height, hunch, and flaring head of the taller, red flower displays power over the yellow flower figure. The red flower's power comes at the expense of the yellow flower's comfort. While there is a conflict between the two central flower figures, there is a sea of bystander flowers that blend into each other, displaying the complicit comfort of not intervening violent power dynamics."<br></p>
+                <p class="artist-link">find Jessee Steele on instagram:&nbsp;<a href="https://www.instagram.com/jessee_steele_art/" style="width: 100%;" target="_blank">@jessee_steele_art</a><br></p>
+            </div>
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 30px;height: 100%;max-height: 100%;max-width: 50%;overflow: auto;"><img src="assets/img/art/flowpow.jpg" style="max-height: 90%;max-width: 100%;"></div>
+    </div>
+    <div class="d-flex flex-row align-items-stretch zine-pane" id="brendan-stow">
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 30px;height: 100%;max-height: 100%;max-width: 50%;overflow: auto;"><img src="assets/img/art/goldengirl.jpg" style="max-height: 90%;max-width: 100%;"></div>
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;height: 100%;padding-top: 20px;max-height: 100%;max-width: 50%;">
+            <div style="width: 80%;text-align: right;padding: 10px 0px;border-top: 6px solid #355f6b ;border-bottom: 6px solid #355f6b ;">
+                <h1 class="image-title" style="width: 100%;">Golden Girl</h1>
+                <h3 class="pnoun-age">Brendan Stow, he/him/they, 18</h3>
+                <p class="statement" style="width: 100%;">"Visual art allows me to speak my mind without words. I usually don’t care to explain the intended meaning of my art because I believe the viewer’s interpreted meaning is just as valid...The works that I have created in 2020 and 2021 are a visual expression of my thoughts on communication, individually, humanity, and connectedness during the Covid-19 pandemic."<br></p>
+                <p class="artist-link" style="width: 100%;">find Brendan Stow on instagram:&nbsp;<a href="https://www.instagram.com/moondunedesign/" style="width: 100%;" target="_blank">@moondunedesign</a><br></p>
+                <p class="artist-link" style="width: 100%;">find Brendan Stow on venmo:&nbsp;<a href="https://account.venmo.com/Brendan-Stow" style="width: 100%;" target="_blank">@Brendan-Stow</a><br></p>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-row align-items-stretch zine-pane">
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;height: 100%;padding-top: 20px;max-height: 100%;max-width: 50%;">
+            <div style="width: 80%;text-align: right;padding: 10px 0px;border-top: 6px solid #9ad1d4 ;border-bottom: 6px solid #9ad1d4 ;">
+                <h1 class="image-title" style="width: 100%;">Reaching</h1>
+                <h3 class="pnoun-age">Vyshu Sabbi, she/her,&nbsp; 16</h3>
+                <p class="statement" style="width: 100%;">"Power in this artwork embodies curiosity and limitless possibilities. I created this piece digitally with the intent of showing an outstretched hand from the perspective of the eyes of the being attached. The idea of the unknown has always brought me comfort and I wanted to convey a sense of wonder and longing through this worm's eye view. I chose to make certain parts blurry (i.e. the moon, arm, and certain patches of stars) in order to make the hand the focal point. This also helps to create depth in the background, a balance of the areas with more concentrated stars and areas with less, and a loose and unbound mood throughout this piece."<br></p>
+                <p class="artist-link" style="width: 100%;">find Vyshu Sabbi on instagram:&nbsp;<a href="https://www.instagram.com/vyshusartt" style="width: 100%;" target="_blank">@vyshusartt</a><br></p>
+            </div>
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 30px;height: 100%;max-height: 100%;max-width: 50%;overflow: auto;"><img src="assets/img/art/reaching.jpg" style="max-height: 90%;max-width: 100%;"></div>
+    </div>
+    <div class="d-flex flex-row align-items-stretch zine-pane" id="isabella-gamez">
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 30px;height: 100%;max-height: 100%;max-width: 50%;overflow: auto;"><img src="assets/img/art/selfportrait.jpg" style="max-height: 90%;max-width: 100%;"></div>
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;height: 100%;padding-top: 20px;max-height: 100%;max-width: 50%;">
+            <div style="width: 80%;text-align: right;padding: 10px 0px;border-top: 6px solid #355f6b ;border-bottom: 6px solid #355f6b ;">
+                <h1 class="image-title" style="width: 100%;">Self Portrait of an Artist</h1>
+                <h3 class="pnoun-age">Isabella Gamez, she/her,&nbsp; 19</h3>
+                <p class="statement" style="width: 100%;">"Something that has been a lifelong struggle is the completion of a self-portrait. There are countless reasons why I might have had difficulty approaching this topic, however, this struggle was, of course, personal. When I create a portrait, I must familiarize myself with my subject. I am given the opportunity to learn the intricacies of their face and to map out their features on a canvas. This level of intimacy with myself has been incredibly daunting. In the past, it has felt as if I am painting a stranger, unable to find recognizable features. I was incapable, and perhaps unwilling, to allow the necessary level of familiarity with myself. This painting is my latest approach to this struggle, and my first step forward. With each step, the more I can find self-acceptance and comfort in myself, and in turn, I can find more comfort and control in my life."<br></p>
+                <p class="artist-link">find Isabella Gamez on venmo:&nbsp;<a href="https://account.venmo.com/Isabella-Gamez" style="width: 100%;" target="_blank">@Isabella-Gamez</a><br></p>
+                <p class="artist-link">visit Isabella Gamez's website:&nbsp;&nbsp;<a href="https://igamezart.wixsite.com/isabellagamez" style="width: 100%;" target="_blank">wixsite.com/isabellagamez</a>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+    <div class="zine-pane" style="width: 100vw;height: 100vh;background: #0e0e0e;border: 30px double #bc9eca ;">
+        <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 0px;width: 100%;height: 100%;">
+            <p style="color: #c6c6c6;font-size: 50px;text-align: center;width: 70%;font-family: p22-klauss-kursiv;">"Love recognizes no barriers. It jumps hurdles, leaps fences, penetrates walls to arrive at its destination full of hope."</p>
+            <p style="max-width: 500px;color: #c6c6c6;font-family: typeka;font-size: 28px;">- Maya Angelou</p>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center align-items-center zine-pane" style="width: 100vw;height: 100vh;background: #0e0e0e;padding: 3% 5%;">
+        <div class="d-flex flex-row justify-content-center align-items-stretch" style="height: 90%;">
+            <div class="col d-flex flex-column justify-content-start align-items-center" style="padding: 0px 3%;overflow:auto">
+                <h1 class="dpac-headings" style="border-bottom: 6px solid #bc9eca ;">DurmPAC</h1>
+                <p class="dpac-text">The Durham Powerful Art Collective thanks you for enjoying our zine and being a part of our community.</p>
+                <p class="dpac-text" style="width: 100%;margin-bottom: 6px;">We are:</p>
+                <ul class="dpac-text" style="padding-left: 26px;width: 100%;border-left: 4px solid #355f6b;">
+                    <li>Atom Edwards<br></li>
+                    <li>Aminah Jenkins<br></li>
+                    <li>Alexis King</li>
+                    <li>Nori McDuffie</li>
+                    <li>Jett Pavlica<br></li>
+                    <li>Celia Ruley<br></li>
+                    <li>Jessee Steele<br></li>
+                </ul>
+                <p class="dpac-text" style="margin-top: auto;">As the designer and programmer for Sawubona's digital edition, Jett would like to thank you for making it to the end of a webpage they're extremely proud of.&nbsp;</p>
+            </div>
+            <div class="col d-flex flex-column justify-content-start align-items-center" style="padding: 0px 3%;overflow:auto">
+                <h1 class="dpac-headings" style="border-bottom: 6px solid #bc9eca ;">Contributors</h1>
+                <p class="dpac-text">Sawubona was made possible by the wonderful artists that submitted to our zine. Though we weren't able to feature every submission, we are grateful for them all.<br></p>
+                <p class="dpac-text" style="width: 100%;margin-bottom: 6px;">They are:</p>
+                <ul class="dpac-text" style="padding-left: 26px;width: 100%;border-left: 4px solid #355f6b;">
+                    <li>C.jae</li>
+                    <li>Vyshu Sabbi<br></li>
+                    <li>x. ramos-lara<br></li>
+                    <li>Ankita Nandi<br></li>
+                    <li>Alexis King</li>
+                    <li>Jessee Steele<br></li>
+                    <li>Brendan Stow<br></li>
+                    <li>Isabella Gamez<br></li>
+                    <li>Lennda Chen<br></li>
+                    <li>Hannah Burleson<br></li>
+                    <li>Keon Terry<br></li>
+                </ul>
+            </div>
+            <div class="col d-flex flex-column justify-content-start align-items-center" style="padding: 0px 3%;overflow:auto">
+                <h1 class="dpac-headings" style="border-bottom: 6px solid #bc9eca ;">Supporters</h1>
+                <p class="dpac-text">DurmPAC extends its deepest gratuity to the following financial supporters:<br></p>
+                <ul class="dpac-text" style="padding-left: 26px;width: 100%;border-left: 4px solid #355f6b;">
+                    <li>Durham Office on Youth&nbsp;</li>
+                </ul>
+                <h1 style="font-family: opake;text-align: center;color: #e0e0e0;margin-top: auto;margin-bottom: auto;font-size: 40px;border-top: 4px solid #9ad1d4;border-bottom: 4px solid #9ad1d4;padding: 10px 0px;">thanks for visiting, we hope to see you soon!</h1>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/cover-sketch.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>

@@ -28,8 +28,13 @@ p {
 }
 
 img {
-  scroll-snap-align: start;
   max-height: 60vh;
+}
+
+@media (min-width: 576px) {
+  img, h2 {
+    scroll-snap-align: start;
+  }
 }
 
 a {

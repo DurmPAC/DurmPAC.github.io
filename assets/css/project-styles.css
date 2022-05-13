@@ -2,3 +2,54 @@
   min-width: 400px;
 }
 
+html, body {
+  width: 100vw;
+  height: 100vh;
+  background: #0e0e0e;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: #fcfaee;
+  font-family: mr-eaves-modern;
+  font-weight: 600;
+  font-size: 6vh;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #fcfaee;
+  font-family: mr-eaves-modern;
+  font-weight: 600;
+  font-size: 5vh;
+  margin-bottom: 18px;
+}
+
+p {
+  color: #e0e0e0;
+  font-size: 2.6vh;
+  font-family: objektiv-mk3;
+}
+
+a {
+  color: #e5c4d6;
+  font-size: 3vh;
+}
+
+a:hover {
+  color: #bc9eca;
+  font-size: 3vh;
+}
+
+.project-col {
+  max-width: 350px;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .project-col {
+    max-width: 500px;
+  }
+}
+

@@ -4,32 +4,60 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>DurmPAC</title>
-    <meta name="twitter:description" content="A Durham-based art collective.">
-    <meta name="twitter:card" content="summary">
-    <meta property="og:type" content="website">
-    <meta name="description" content="A Durham based art collective creating a welcoming space for youth artists to express themselves.">
-    <meta name="twitter:title" content="DurmPAC">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith+One">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Notable">
-    <link rel="stylesheet" href="https://use.typekit.net/ywj1sse.css">
-    <link rel="stylesheet" href="/assets/css/splash-styles.css">
+    <title>durmpac-site-2023</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
 </head>
 
-<body class="d-flex flex-column justify-content-center align-items-center flex-md-row flex-lg-row flex-xl-row">
-    <h1 style="/*font-size: 12vh;*//*margin: 0px;*/">DurmPAC</h1>
-    <div id="splash-spacer" style="margin: 0px 50px;"></div>
-    <ul class="list-unstyled text-center">
-        <li><a href="/team.html">who we are</a></li>
-        <li><a href="/projects.html">what we do</a></li>
-        <li><a href="/sawubona.html">our digital zine</a></li>
-        <li><a href="/contact.html">how to reach us</a></li>
-    </ul>
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/assets/js/height-fixer.js"></script>
+<body style="color: #0e0e0e;">
+    <main style="background: #0e0e0e;">
+        <div id="splash-sketch-container" class="fullscreen-div"></div>
+        <div class="d-flex flex-column justify-content-start align-items-center fullscreen-div" id="projects-screen">
+            <!-- Start: spacer -->
+            <div class="page-spacer"></div><!-- End: spacer -->
+            <h1 style="text-align: center;">Our Projects</h1><!-- Start: supply-drop-card -->
+            <div class="d-flex flex-column project-card"><a href="supply-drop.html"><img class="project-image" src="assets/img/supply-drop.png"></a><a class="project-link" href="supply-drop.html">Supply Drop, 2023</a>
+                <p class="project-description">- a series of pop-ups dedicated to supplying artists and building community</p>
+            </div><!-- End: supply-drop-card -->
+            <!-- Start: prototype-card -->
+            <div class="d-flex flex-column project-card"><a href="#"><img class="project-image" src="assets/img/prototype.png"></a><a class="project-link" href="#"><em>PROTOTYPE</em>, 2022-2023</a>
+                <p class="project-description">- a digital zine that reflects and immortalizes Pop Box Gallery's exhibit of the same name</p>
+            </div><!-- End: prototype-card -->
+            <!-- Start: juneteenth-card -->
+            <div class="d-flex flex-column project-card"><a href="#"><img class="project-image" src="assets/img/juneteenth-poster.png"></a><a class="project-link" href="#">Juneteenth 2022, 2023</a>
+                <p class="project-description">- an opportunity for youth artists to be celebrated through exhibition at the Hayti Heritage Center's annual Juneteenth Celebration</p>
+            </div><!-- End: juneteenth-card -->
+            <!-- Start: sawubona-card -->
+            <div class="d-flex flex-column project-card"><a href="#"><img class="project-image" src="assets/img/sawubona.png"></a><a class="project-link" href="#">Sawubona, 2019 - 2020</a>
+                <p class="project-description">- a zine centering youth artists in the triangle area</p>
+            </div><!-- End: sawubona-card -->
+        </div>
+        <div class="d-flex flex-column flex-grow-1 justify-content-start align-items-center align-content-around justify-content-lg-evenly fullscreen-div" id="team-screen">
+            <!-- Start: spacer -->
+            <div class="page-spacer"></div><!-- End: spacer -->
+            <h1>Our Team</h1>
+            <p id="mission-statement"><span style="color: rgb(224, 224, 224);">The Durham Powerful Arts Collective, affectionately known as DurmPAC,&nbsp; is a youth organized team with six members of diverse backgrounds and identities.&nbsp;As our name implies, we believe that art is a powerful form of expression that can bring healing and change.</span></p>
+            <div class="d-flex flex-column flex-lg-row" id="team-card-holder">
+                <div class="card" style="border-style: none;background: var(--bs-card-cap-bg);"><img class="card-img w-100 d-block" src="assets/img/nori-headshot.jpg">
+                    <div class="card-img-overlay">
+                        <h1 class="team-text">Nori McDuffie</h1>
+                        <p class="team-text">Project Facilitator</p>
+                    </div>
+                </div>
+                <div class="card order-last order-lg-2" style="border-style: none;background: var(--bs-card-cap-bg);"><img class="card-img w-100 d-block" src="assets/img/purple-jett-nori.jpeg"></div>
+                <div class="card order-3" style="border-style: none;background: var(--bs-card-cap-bg);"><img class="card-img w-100 d-block" src="assets/img/jett-headshot.jpeg">
+                    <div class="card-img-overlay">
+                        <h1 class="team-text">Jett Pavlica</h1>
+                        <p class="team-text">Web Developer,<br>Digital Designer</p>
+                    </div>
+                </div>
+            </div><!-- Start: spacer -->
+            <div class="page-spacer"></div><!-- End: spacer -->
+        </div>
+    </main>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/splash-animation.js"></script>
 </body>
 
 </html>

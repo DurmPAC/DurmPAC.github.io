@@ -1,55 +1,68 @@
-.col {
-  min-width: 400px;
-}
+/* page structure and layout */
 
 html, body {
   width: 100vw;
   height: 100vh;
-  background: #0e0e0e;
-  overflow: auto;
-  scroll-behavior: smooth;
+  background-color: #0e0e0e;
 }
 
-h1 {
+.writeup-container {
+  width: min(800px, 75vw);
+  height: 100%;
+}
+
+.page-spacer {
+  width: 100%;
+  min-height: 4px;
+  background-color: #bc9eca;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.project-banner {
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+/* typography */
+
+h1, li, p, a {
   color: #fcfaee;
-  font-family: mr-eaves-modern;
-  font-weight: 600;
-  font-size: 6vh;
-  margin-bottom: 20px;
-}
-
-h2 {
-  color: #fcfaee;
-  font-family: mr-eaves-modern;
-  font-weight: 600;
-  font-size: 5vh;
-  margin-bottom: 18px;
-}
-
-p {
-  color: #e0e0e0;
-  font-size: 2.6vh;
-  font-family: objektiv-mk3;
-}
-
-a {
-  color: #e5c4d6;
-  font-size: 3vh;
-}
-
-a:hover {
-  color: #bc9eca;
-  font-size: 3vh;
-}
-
-.project-col {
-  max-width: 350px;
+  /*text-decoration: none;*/
   width: 100%;
 }
 
-@media (min-width: 576px) {
-  .project-col {
-    max-width: 500px;
-  }
+h1 {
+  font-family: "mr-eaves-modern",sans-serif;
+}
+
+.project-title {
+  font-size: 2.2rem;
+}
+
+.project-subtitle {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+p, a {
+  font-size: 1.3rem;
+  font-family: "Graphie",sans-serif;
+  font-weight: 300;
+}
+
+li {
+  font-size: 1.1rem;
+  font-family: "Graphie",sans-serif;
+  font-weight: 100;
+}
+
+a {
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #bc9eca;
 }
 

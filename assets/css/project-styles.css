@@ -2,13 +2,13 @@
 
 html, body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #0e0e0e;
 }
 
 .writeup-container {
   width: min(800px, 75vw);
-  height: 100%;
+  /*min-height: 100%;*/
 }
 
 .page-spacer {
@@ -24,11 +24,17 @@ html, body {
   margin-bottom: 2vh;
 }
 
+.project-body-image {
+  max-width: 75%;
+  max-height: 400px;
+  margin-bottom: 2vh;
+}
+
 /* typography */
 
 h1, li, p, a {
   color: #fcfaee;
-  /*text-decoration: none;*/
+  text-decoration: none;
   width: 100%;
 }
 
@@ -49,6 +55,7 @@ p, a {
   font-size: 1.3rem;
   font-family: "Graphie",sans-serif;
   font-weight: 300;
+  margin-bottom: 2vh;
 }
 
 li {
@@ -59,10 +66,11 @@ li {
 
 a {
   text-align: center;
+  color: #d2bed7;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: #bc9eca;
 }
 

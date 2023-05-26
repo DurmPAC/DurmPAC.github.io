@@ -38,6 +38,12 @@
 h1, p, a, a:hover {
   color: #fcfaee;
   text-decoration: none;
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+a {
+  color: #bc9eca;
 }
 
 h1 {

@@ -58,12 +58,15 @@ p, a {
 
 a:hover {
   text-decoration: underline;
-  /*color: #bc9eca;*/
 }
 
 .team-text {
   text-align: left;
   text-shadow: 3px 3px 2px var(--bs-black);
+}
+
+.whats-next-text {
+  max-width: 600px;
 }
 
 /* projects area */

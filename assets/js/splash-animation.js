@@ -1,96 +1,91 @@
 var flowers = [];
 var images = [];
+var nameImage;
 var flowerCount = 400;
 var font;
 
 var sketchNode = document.getElementById('splash-sketch-container');
 
 function mouseMoved() {
-  let mouseVec = createVector(mouseX, mouseY);
-  for (let flower of flowers) {
-    let dist = flower.pos.dist(mouseVec);
-    if (dist < 200) {
-      let forceVec = p5.Vector.sub(flower.pos, mouseVec);
-      forceVec.normalize().mult(4 * (1 - dist/200));
-      forceVec.z = 0;
-      flower.pos.add(forceVec);
+    let mouseVec = createVector(mouseX, mouseY);
+    for (let flower of flowers) {
+        let dist = flower.pos.dist(mouseVec);
+        if (dist < 200) {
+            let forceVec = p5.Vector.sub(flower.pos, mouseVec);
+            forceVec.normalize().mult(4 * (1 - dist / 200));
+            forceVec.z = 0;
+            flower.pos.add(forceVec);
+        }
     }
-  }
 }
 
 function preload() {
-  let img = loadImage("assets/img/flower.png");
-  images.push(img);
-  img = loadImage("assets/img/zinnia.png");
-  images.push(img);
-  
-  // font = loadFont("Mulish.ttf");
+    let img = loadImage("assets/img/flower.png");
+    images.push(img);
+    img = loadImage("assets/img/zinnia.png");
+    images.push(img);
+
+    nameImage = loadImage('assets/img/name.png');
+
+    // font = loadFont("Mulish.ttf");
 }
 
 function setup() {
-  // enviroment
-  let c = createCanvas(window.innerWidth, window.innerHeight);
+    // enviroment
+    let c = createCanvas(window.innerWidth, window.innerHeight);
     c.parent(sketchNode);
-  fill(255);
-  stroke("#0e0e0e");
-  strokeWeight(3);
-  frameRate(60);
-  imageMode(CENTER);
-  textAlign(CENTER, CENTER);
-  // textFont(font);
-  let incrementalSize = textSize();
-  while (textWidth("DurmPAC") < width * 0.75) {
-    incrementalSize++;
-    textSize(incrementalSize);
-  }
+    fill(255);
+    stroke("#0e0e0e");
+    strokeWeight(3);
+    frameRate(60);
+    imageMode(CENTER);
+    textAlign(CENTER, CENTER);
 
-  // setup citizens
-  for (let i = 0; i < flowerCount; i++) {
-    flowers.push(new Flower());
-  }
+    // resize the name image
+    nameImage.resize(width * 0.8, 0);
+    
+    for (let i = 0; i < flowerCount; i++) {
+        flowers.push(new Flower());
+    }
 }
 
 function draw() {
-  background("#0e0e0e");
+    background("#0e0e0e");
+    for (let flower of flowers) {
+        flower.step();
+        flower.show();
+    }
 
-  for (let flower of flowers) {
-    flower.step();
-    flower.show();
-  }
-  push();
-  // noStroke();
-  strokeWeight(8);
-  text("DurmPAC", width / 2, height / 2);
-  pop();
+    image(nameImage, width / 2, height / 2);
 }
 
 class Flower {
-  constructor() {
-    this.regen();
-  }
-
-  regen() {
-    this.pos = createVector(random(width), random(-height), random(TWO_PI));
-    this.vel = createVector(0, random(0.1, 2), random(-0.01, 0.01));
-    this.image = random(images);
-  }
-
-  step() {
-    this.vel.x =
-      noise(this.pos.x * 0.003, this.pos.y * 0.003, frameCount / 100) - 0.5;
-    this.pos.add(this.vel);
-    if (this.pos.y > height + 10) {
-      this.regen();
+    constructor() {
+        this.regen();
     }
-  }
 
-  show() {
-    push();
-    translate(this.pos.x, this.pos.y);
-    scale(0.1 + noise(this.pos.x * 0.01, this.pos.y * 0.003) / 2);
-    rotate(this.pos.z);
-    image(this.image, 0, 0);
-    pop();
-  }
+    regen() {
+        this.pos = createVector(random(width), random(-height), random(TWO_PI));
+        this.vel = createVector(0, random(0.1, 2), random(-0.01, 0.01));
+        this.image = random(images);
+    }
+
+    step() {
+        this.vel.x =
+            noise(this.pos.x * 0.003, this.pos.y * 0.003, frameCount / 100) - 0.5;
+        this.pos.add(this.vel);
+        if (this.pos.y > height + this.image.height) {
+            this.regen();
+        }
+    }
+
+    show() {
+        push();
+        translate(this.pos.x, this.pos.y);
+        scale(0.1 + noise(this.pos.x * 0.01, this.pos.y * 0.003) / 2);
+        rotate(this.pos.z);
+        image(this.image, 0, 0);
+        pop();
+    }
 }
 

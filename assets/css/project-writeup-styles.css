@@ -5,7 +5,7 @@ html, body {
 }
 
 .writeup-container {
-  width: min(800px, 75vw);
+  width: min(800px, 90vw);
 }
 
 .page-spacer {

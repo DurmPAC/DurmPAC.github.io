@@ -3,6 +3,7 @@ var images = [];
 var nameImage;
 var flowerCount = 400;
 var font;
+var hf = 0;
 
 var sketchNode = document.getElementById('splash-sketch-container');
 
@@ -32,7 +33,7 @@ function preload() {
 
 function setup() {
     // enviroment
-    let c = createCanvas(window.innerWidth, window.innerHeight);
+    let c = createCanvas(windowWidth, windowHeight);
     c.parent(sketchNode);
     fill(255);
     stroke("#0e0e0e");
@@ -42,7 +43,9 @@ function setup() {
     textAlign(CENTER, CENTER);
 
     // resize the name image
-    nameImage.resize(width * 0.8, 0);
+    // nameImage.resize(width * 0.8, 0);
+    hf =  (width * 0.8)/nameImage.width;
+    
     
     for (let i = 0; i < flowerCount; i++) {
         flowers.push(new Flower());
@@ -56,7 +59,7 @@ function draw() {
         flower.show();
     }
 
-    image(nameImage, width / 2, height / 2);
+    image(nameImage, width / 2, height / 2, width * 0.8, nameImage.height * hf );
 }
 
 class Flower {

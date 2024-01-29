@@ -1,0 +1,23 @@
+body {
+  background: #0e0e0e;
+}
+
+.cards-container {
+  justify-content: center;
+}
+
+.card {
+  background: #bc9eca;
+  padding: 20px 0px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.member-name {
+  font-size: 2rem;
+}
+
+h1, p {
+  text-align: center;
+}
+

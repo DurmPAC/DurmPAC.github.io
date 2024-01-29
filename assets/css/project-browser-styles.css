@@ -1,0 +1,46 @@
+html, body, main {
+  background: #0e0e0e;
+}
+
+/* projects area */
+
+.project-image, .project-link, .project-description {
+  max-width: min(85vw, 800px);
+}
+
+.project-description, .project-link {
+  text-align: left;
+}
+
+.project-image {
+  margin-bottom: 3vh;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 12px;
+  border-color: rgba(0,0,0,0);
+}
+
+.project-image:hover {
+  opacity: 85%;
+  border-color: #bc9eca;
+}
+
+.project-link {
+  font-size: 1.5em;
+}
+
+.project-card {
+  margin-top: 5vh;
+}
+
+#spacer {
+  background-color: #bc9eca;
+  width: 2px;
+  height: 60%;
+}
+
+#projects-screen {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+

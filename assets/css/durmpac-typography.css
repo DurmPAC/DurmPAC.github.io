@@ -1,0 +1,48 @@
+/* typeface */
+
+h1 {
+  font-family: 'Montserrat';
+}
+
+p, a, li {
+  font-family: 'Mulish';
+}
+
+/* color, margins, alignment */
+
+h1, p, a, a:hover, li {
+  color: #fcfaee;
+  text-decoration: none;
+  margin: 0px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+li {
+  background-color: #00000000;
+}
+
+a {
+  color: #bc9eca;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fcfaee;
+}
+
+/* sizing */
+
+h1 {
+  font-size: 2.6rem;
+}
+
+p, a {
+  font-size: 1.3rem;
+}
+
+.caption {
+  font-size: 1rem;
+  margin: 0 auto;
+}
+

@@ -1,108 +1,39 @@
 /* page structure and layout */
 
-@media (min-width: 992px) {
-  html {
-    scroll-snap-type: y proximity;
-  }
+main {
+  background: #0e0e0e;
 }
 
 .fullscreen-div {
   width: 100vw;
   min-height: 100vh;
   color: #00000000;
-  scroll-snap-align: start;
 }
 
-#team-card-holder, #mission-statement {
-  max-width: 70vw;
+#landing-info-div {
+  padding-top: 40px;
 }
 
-#team-container {
-  /*padding-bottom: 40px;*/
+@media (min-width: 768px) {
+  #landing-info-div {
+    padding-top: 80px;
+  }
 }
 
-#projects-screen {
-  /*padding-top: 3vh;*/
-}
-
-.page-spacer {
-  width: 33vw;
-  height: 4px;
-  background-color: #bc9eca;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-}
-
-/* typography */
-
-h1, p, a, a:hover {
-  color: #fcfaee;
-  text-decoration: none;
-  margin: 0px;
-  margin-bottom: 8px;
-}
-
-a {
-  color: #bc9eca;
-}
-
-h1 {
-  font-family: "mr-eaves-modern",sans-serif;
-}
-
-p, a {
-  font-size: 1.3rem;
-  text-align: center;
-  font-family: "Graphie";
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.team-text {
-  text-align: left;
-  text-shadow: 3px 3px 2px var(--bs-black);
-}
-
-.whats-next-text {
-  max-width: 600px;
-}
-
-/* projects area */
-
-.project-image, .project-link, .project-description {
-  max-width: min(85vw, 800px);
-}
-
-.project-description, .project-link {
-  text-align: left;
-}
-
-.project-image {
-  margin-bottom: 3vh;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 12px;
-  border-color: rgba(0,0,0,0);
-}
-
-.project-image:hover {
-  opacity: 90%;
-  border-color: #bc9eca;
-}
-
-.project-link {
-  font-size: 1.5em;
-}
-
-.project-card {
-  margin-top: 5vh;
+.splash-column {
+  width: 90vw;
+  margin-bottom: 20px;
+  /*margin: auto 0;*/
 }
 
 @media (min-width: 992px) {
-  img {
-    max-width: 33vw;
+  .splash-column {
+    max-width: min(600px, 40vw);
   }
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
 }
 

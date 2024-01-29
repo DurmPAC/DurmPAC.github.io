@@ -15,62 +15,40 @@
         }
     </script>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,500&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/navbar-styles.css">
+    <link rel="stylesheet" href="assets/css/durmpac-typography.css">
     <link rel="stylesheet" href="assets/css/index-styles.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
 </head>
 
 <body style="color: #0e0e0e;">
-    <main style="background: #0e0e0e;">
+    <main>
         <div id="splash-sketch-container" class="fullscreen-div"></div>
-        <div class="d-flex flex-column justify-content-start align-items-center align-content-around fullscreen-div" id="up-next-screen">
-            <!-- Start: spacer -->
-            <div class="page-spacer"></div><!-- End: spacer -->
-            <h1>Up Next</h1>
-            <div></div><img class="project-image" src="assets/img/juneteenth-yar-banner.png">
-            <p class="whats-next-text">Join DurmPAC and <a href="https://theartchoseme.com/">The Art Chose Me</a>&nbsp;at a youth artists reception for the featured artists of this year's Juneteenth themed exhibit.</p>
-            <p class="whats-next-text">The reception will be held on September 7<sup>th</sup>&nbsp;at Bright Black Candle in Durham, North Carolina.</p>
-        </div>
-        <div class="d-flex flex-column justify-content-start align-items-center fullscreen-div" id="projects-screen">
-            <!-- Start: spacer -->
-            <div class="page-spacer"></div><!-- End: spacer -->
-            <h1 style="text-align: center;">Our Projects</h1><!-- Start: supply-drop-card -->
-            <div class="d-flex flex-column project-card" id="supply-drop-card"><a href="supply-drop.html"><img class="project-image" src="assets/img/supply-drop-banner-flow.webp"></a><a class="project-link" href="supply-drop.html">Supply Drop, 2023</a>
-                <p class="project-description">- a series of pop-ups dedicated to supplying artists and building community</p>
-            </div><!-- End: supply-drop-card -->
-            <!-- Start: prototype-card -->
-            <div class="d-flex flex-column project-card" id="prototype-card"><a href="prototype.html"><img class="project-image" src="assets/img/prototype-project.png"></a><a class="project-link" href="prototype.html"><em>PROTOTYPE</em>, 2022-2023</a>
-                <p class="project-description">- a digital zine that reflects and immortalizes Pop Box Gallery's exhibit of the same name</p>
-            </div><!-- End: prototype-card -->
-            <!-- Start: juneteenth-card -->
-            <div class="d-flex flex-column project-card" id="juneteenth-card"><a href="juneteenth.html"><img class="project-image" src="assets/img/juneteenth-project.png"></a><a class="project-link" href="juneteenth.html">Juneteenth 2022, 2023</a>
-                <p class="project-description">- an opportunity for youth artists to be celebrated through exhibition at the Hayti Heritage Center's annual Juneteenth Celebration</p>
-            </div><!-- End: juneteenth-card -->
-            <!-- Start: sawubona-card -->
-            <div class="d-flex flex-column project-card" id="sawubona-card"><a href="sawubona.html"><img class="project-image" src="assets/img/sawubona.webp"></a><a class="project-link" href="sawubona.html">Sawubona, 2019 - 2020</a>
-                <p class="project-description">- a zine centering youth artists in the triangle area</p>
-            </div><!-- End: sawubona-card -->
-        </div>
-        <div class="d-flex flex-column flex-grow-1 justify-content-start align-items-center align-content-around justify-content-lg-evenly fullscreen-div" id="team-screen">
-            <!-- Start: spacer -->
-            <div class="page-spacer"></div><!-- End: spacer -->
-            <h1>Our Team</h1>
-            <p id="mission-statement"><span style="color: rgb(224, 224, 224);">The Durham Powerful Arts Collective, affectionately known as DurmPAC,&nbsp; is a youth organized team with members of diverse backgrounds and identities.&nbsp;As our name implies, we believe that art is a powerful form of expression that can bring healing and change.</span></p>
-            <div class="d-flex flex-column flex-lg-row" id="team-card-holder">
-                <div class="card" style="border-style: none;background: var(--bs-card-cap-bg);"><img class="card-img w-100 d-block" src="assets/img/nori-headshot.jpg">
-                    <div class="card-img-overlay">
-                        <h1 class="team-text">Nori McDuffie</h1>
-                        <p class="team-text">Project Facilitator</p>
-                    </div>
+        <nav class="navbar navbar-expand-md sticky-top" id="navbar">
+            <div class="container-fluid"><a class="navbar-brand" href="#">The Durham Powerful Arts Collective</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="projects.html">Our Projects</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="team.html">Our Team</a></li>
+                    </ul>
                 </div>
-                <div class="card order-last order-lg-2" style="border-style: none;background: var(--bs-card-cap-bg);"><img class="card-img w-100 d-block" src="assets/img/purple-jett-nori.webp"></div>
-                <div class="card order-3" style="border-style: none;background: var(--bs-card-cap-bg);"><img class="card-img w-100 d-block" src="assets/img/jett-headshot.webp" style="filter: grayscale(100%) sepia(10%);">
-                    <div class="card-img-overlay">
-                        <h1 class="team-text">Jett Pavlica</h1>
-                        <p class="team-text">Web Developer,<br>Digital Designer</p>
-                    </div>
-                </div>
-            </div><!-- Start: spacer -->
-            <div class="page-spacer"></div><!-- End: spacer -->
+            </div>
+        </nav>
+        <div class="d-flex flex-column justify-content-evenly align-items-center flex-lg-row align-items-lg-start fullscreen-div" id="landing-info-div">
+            <div class="col d-flex flex-column justify-content-lg-start align-items-lg-start splash-column">
+                <h1>We're glad you're here.</h1>
+                <p>At DurmPAC, we engage in work that builds formative experiences for young artists in our community by establishing community connections and facilitating artist spaces. We have found our community through Black, Brown, Indigenous, and/or LGBTQIA+ folks within the 919 area.</p><img src="assets/img/art-on-the-fridge.webp">
+                <p class="caption">DurmPAC members Atom, Jett, and Nori</p>
+            </div>
+            <div class="col d-flex d-lg-flex flex-column justify-content-lg-start align-items-lg-start splash-column">
+                <h1>Next Up:</h1>
+                <p>We're partnering with local artist Faith Reagin to put on <a href="https://haptichappenings.github.io">Haptic Happenings</a>&nbsp;over the summer of 2024. The exhibit will feature youth artists from Durham in an exploration of identity through the sense of touch.</p>
+                <p>We're also in partnership with the&nbsp;<a href="https://cefs.ncsu.edu/">Center for Enviromental Farming Systems</a>'s&nbsp;<a href="https://cefs.ncsu.edu/food-system-initiatives/food-system-committee-on-racial-equity/">Committee on Racial Equity</a>&nbsp;to hold an exhibit of artwork that investigates the ways we understand and interact with the food system.</p>
+                <h1>Recently Completed:</h1>
+                <p>Our most recent project was an awesome reception for youth artists held at <a href="https://brightblackcandles.com/">Bright Black Candles</a>. We hosted youth artists featured in the Hayti Heritage Center's Juneteenth Youth Artists Exhibition for a night of celebration and discussion centered on their fantastic pieces.</p>
+            </div>
         </div>
     </main>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

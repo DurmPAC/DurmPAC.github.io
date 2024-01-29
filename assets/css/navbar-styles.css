@@ -1,0 +1,28 @@
+#navbar {
+  background-color: #bc9eca;
+  width: 100vw;
+  height: 60px;
+  scroll-snap-align: start;
+  padding: 0px;
+}
+
+.nav-item, .navbar-brand, .nav-link {
+  margin-bottom: 0px !important;
+}
+
+.navbar-brand {
+  margin-right: 1rem !important;
+}
+
+.container-fluid {
+  background-color: #bc9eca;
+  /*padding: 0px;*/
+  /*min-width: 100vw;*/
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
+

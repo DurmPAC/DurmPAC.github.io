@@ -37,14 +37,14 @@ canvas {
   flex-direction: column;
   align-items: center;
   padding: 12px 10px;
-  max-width: 800px;
+  max-width: min(100vw,800px);
   width: 100%;
   margin: auto;
 }
 
 blockquote {
   margin-bottom: 12px;
-  max-width: 600px;
+  max-width: min(85vw,600px);
 }
 
 /* styling */
@@ -52,7 +52,7 @@ blockquote {
 #welcome-image, #closing-image {
   border: solid 2px #bc9eca;
   border-radius: 6px;
-  max-width: 600px;
+  max-width: min(85vw,600px);
   margin-bottom: 12px;
 }
 

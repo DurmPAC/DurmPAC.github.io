@@ -34,6 +34,7 @@ a:hover {
 h1 {
   text-align: center;
   color: #fcfaee;
+  background-color: #0e0e0e;
   border: solid 2px #bc9eca;
   border-radius: 6px;
 }
@@ -42,6 +43,7 @@ p {
   border: solid 2px #bc9eca;
   border-radius: 6px;
   padding: 4px 8px;
+  background-color: #0e0e0e;
 }
 
 /* sizing */

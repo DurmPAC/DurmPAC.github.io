@@ -18,6 +18,7 @@
     min-width: 160px;
     height: 100vh;
     background: #bc9eca;
+    border-right: solid 2px #fcfaee;
     justify-content: space-between;
     position: sticky;
     top: 0;

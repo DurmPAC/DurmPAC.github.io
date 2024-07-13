@@ -33,7 +33,7 @@ function preload() {
 
 function setup() {
     // enviroment
-    let c = createCanvas(windowWidth, windowHeight);
+    let c = createCanvas(sketchNode.offsetWidth, sketchNode.offsetHeight);
     c.parent(sketchNode);
     fill(255);
     stroke("#0e0e0e");

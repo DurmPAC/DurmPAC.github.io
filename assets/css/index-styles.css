@@ -6,34 +6,160 @@ main {
 
 .fullscreen-div {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   color: #00000000;
+  position: relative;
 }
 
-#landing-info-div {
-  padding-top: 40px;
+#navbar-twizzler {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
-  #landing-info-div {
-    padding-top: 80px;
+  #navbar-twizzler {
+    flex-direction: row;
   }
 }
 
-.splash-column {
-  width: 90vw;
-  margin-bottom: 20px;
-  /*margin: auto 0;*/
+#content-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 10px;
+  max-width: 800px;
+  margin: auto;
 }
 
-@media (min-width: 992px) {
-  .splash-column {
-    max-width: min(600px, 40vw);
-  }
+blockquote {
+  margin-bottom: 12px;
+  max-width: 600px;
 }
 
-img {
-  max-width: 100%;
-  margin: 0 auto;
+/* styling */
+
+#welcome-image, #closing-image {
+  border: solid 2px #bc9eca;
+  border-radius: 6px;
+  max-width: 600px;
+  margin-bottom: 12px;
+}
+
+.section-heading {
+  width: 100%;
+  margin: 24px 0px;
+}
+
+/* accordion */
+
+#about-accordion {
+  width: 100%;
+  --bs-accordion-btn-color: #0e0e0e;
+  --bs-accordion-btn-bg: #bc9eca;
+  --bs-accordion-active-color: #fcfaee;
+  --bs-accordion-active-bg: #0e0e0e;
+  --bs-accordion-bg: #0e0e0e;
+  --bs-accordion-border-color: #bc9eca;
+  --bs-accordion-border-width: 2px;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+/* the things i do for love */
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%) invert(70%) sepia(15%) saturate(624%) hue-rotate(237deg) brightness(97%) contrast(80%);
+}
+
+.mb-0 {
+  border: none;
+}
+
+/* projects area */
+
+.project-image, .project-link, .project-description {
+  max-width: min(100%, 600px);
+}
+
+.project-description, .project-link {
+  text-align: left;
+}
+
+.project-image {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 12px;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.project-image:hover {
+  opacity: 85%;
+  border-color: #bc9eca;
+}
+
+.project-link {
+  font-size: 1.5em;
+}
+
+.project-card {
+  margin-bottom: 18px;
+  align-items: center;
+}
+
+#sawubona-card {
+  margin-bottom: 0px;
+}
+
+.project-image-link, .project-image-link:hover {
+  text-align: center;
+}
+
+/* team area */
+
+body {
+  background: #0e0e0e;
+}
+
+.card {
+  background: #bc9eca;
+  padding: 20px 0px;
+  width: min(100%, 500px);
+  margin-bottom: 12px;
+}
+
+.member-name {
+  font-size: 2rem;
+}
+
+.member-title {
+  color: #0e0e0e;
+}
+
+/* contact area */
+
+form {
+  width: min(100%, 500px);
+}
+
+.form-element {
+  background: none;
+  border: solid 2px #bc9eca;
+  color: #fcfaee;
+}
+
+.form-element, .form-element::placeholder {
+  color: #fcfaee;
+  font-size: 1.2rem;
+}
+
+#form-button {
+  width: 100%;
+  background: none;
+  border: solid 2px#bc9eca;
+}
+
+#form-button:hover {
+  border-color: #fcfaee;
+  background: #bc9eca;
+  /*color: #0e0e0e;*/
 }
 

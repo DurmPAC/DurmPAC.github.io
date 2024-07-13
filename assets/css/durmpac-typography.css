@@ -27,14 +27,34 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   color: #fcfaee;
+}
+
+h1 {
+  text-align: center;
+  color: #fcfaee;
+  border: solid 2px #bc9eca;
+  border-radius: 6px;
+}
+
+p {
+  border: solid 2px #bc9eca;
+  border-radius: 6px;
+  padding: 4px 8px;
 }
 
 /* sizing */
 
 h1 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
+  padding: 6px 0px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
 }
 
 p, a {

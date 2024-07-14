@@ -22,8 +22,8 @@ canvas {
 #navbar-twizzler {
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px) brightness(30%);
+  -webkit-backdrop-filter: blur(8px) brightness(30%);
 }
 
 @media (min-width: 768px) {

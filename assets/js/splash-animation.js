@@ -20,6 +20,10 @@ function mouseMoved() {
   }
 }
 
+function windowResized(){
+    resizeCanvas(windowWidth, windowHeight);
+}
+
 function preload() {
   let img = loadImage('assets/img/flower.png');
   images.push(img);
@@ -41,6 +45,9 @@ function setup() {
   frameRate(60);
   imageMode(CENTER);
 
+    if(width < 700){
+        flowerCount = 160;
+    }
 
 
   for (let i = 0; i < flowerCount; i++) {

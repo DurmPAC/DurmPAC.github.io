@@ -41,9 +41,10 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .navbar-link:hover {
     background-color: #0e0e0e;
+    color: #bc9eca;
   }
 }
 
@@ -67,7 +68,7 @@
   text-align: center;
   /*border-top: #bc9eca;*/
   background: none;
-  color: #bc9eca;
+  /*color: #bc9eca;*/
 }
 
 #navbar {

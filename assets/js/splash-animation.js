@@ -1,9 +1,10 @@
+// authored by Jett Pavlica
+// using illustrations from Celia Ruley
+p5.disableFriendlyErrors = true;
 var flowers = [];
 var images = [];
-var nameImage;
 var flowerCount = 400;
 var font;
-var hf = 0;
 
 var sketchNode = document.getElementById('splash-sketch-container');
 
@@ -20,8 +21,8 @@ function mouseMoved() {
   }
 }
 
-function windowResized(){
-    resizeCanvas(windowWidth, windowHeight);
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function preload() {
@@ -29,10 +30,6 @@ function preload() {
   images.push(img);
   img = loadImage('assets/img/zinnia.png');
   images.push(img);
-
-  nameImage = loadImage('assets/img/name.png');
-
-  // font = loadFont("Mulish.ttf");
 }
 
 function setup() {
@@ -45,15 +42,21 @@ function setup() {
   frameRate(60);
   imageMode(CENTER);
 
-    if(width < 700){
-        flowerCount = 160;
-    }
-
-
+  // flowers
+  if (width < 700) {
+    flowerCount = 160;
+  }
   for (let i = 0; i < flowerCount; i++) {
     flowers.push(new Flower());
   }
+
+  // add the instagram embed script, ensuring that animation fires first
+  var embedScript = document.createElement('script');
+  embedScript.setAttribute('src', 'https://www.instagram.com/embed.js');
+  document.head.appendChild(embedScript);
 }
+
+
 
 function draw() {
   background('#0e0e0e');
@@ -66,6 +69,7 @@ function draw() {
 class Flower {
   constructor() {
     this.regen();
+    this.lastY = 0;
   }
 
   regen() {
@@ -77,7 +81,8 @@ class Flower {
   step() {
     this.vel.x =
         noise(this.pos.x * 0.003, this.pos.y * 0.003, frameCount / 100) - 0.5;
-    this.pos.add(this.vel);
+    this.pos.add(
+        this.vel.copy().mult(constrain(1 - scrollY / windowHeight, 0, 1)));
     if (this.pos.y > height + this.image.height) {
       this.regen();
     }

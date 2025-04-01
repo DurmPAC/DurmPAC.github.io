@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Basteleur';
+	src: url(../../assets/fonts/Basteleur-948be8887b5c01218fdfd9398a8eb5a2.woff2) format('woff2'),
+	url(../../assets/fonts/Basteleur-e99de91f787659d63a47c64e13ecb130.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}

@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url(../../assets/fonts/Helvetica%20Neue-4261a8bd54a7d9ed8df904c996d90400.woff2) format('woff2'),
+	url(../../assets/fonts/Helvetica%20Neue-40fc05e4ca60fd6f511f19610966eb37.woff) format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url(../../assets/fonts/Helvetica%20Neue-7f90038a76cad3368bcf9cbe33725224.woff2) format('woff2'),
+	url(../../assets/fonts/Helvetica%20Neue-4f1d338d14a05cb3c087a04eb3321468.woff) format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>DurmPAC</title>
+    <meta name="description" content="An art collective serving Durham's youth artists.">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Basteleur.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier+Prime&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Helvetica%20Neue.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,500&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass+Mono&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen+Mono&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/uproot-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+</head>
+
+<body>
+    <div id="p5_loading" class="fullscreen-div flex-center cream-bg">
+        <p>Loading Uproot Digital Zine...</p>
+    </div>
+    <div id="cover-sketch"></div>
+    <div id="table-of-contents" class="fullscreen-div cream-bg flex-center">
+        <h1>Contents</h1>
+        <ul>
+            <li>Introduction</li>
+            <li class="bold-li">Section One: Arts</li>
+            <li>– NorthStar Church of the Arts</li>
+            <li>– Earthseed Land Collective</li>
+            <li class="bold-li">Section Two: Experiences</li>
+            <li>– Opening Ceremony</li>
+            <li>– Echoes of the In Between</li>
+            <li>– Blind Contour and Soundscape</li>
+            <li>– Slow Art Tour</li>
+            <li>– Land Body Movement</li>
+            <li class="bold-li">Credits &amp; Acknowledgements</li>
+        </ul>
+    </div>
+    <div id="introduction" class="fullscreen-div flex-center"><img class="background-image" src="assets/img/uproot/sky-texture.webp" style="z-index: -1;">
+        <h1 class="hcopy" style="grid-column: 1 / span 1;grid-row: 1 / span 1;">introduction</h1>
+        <h4 style="text-align: center;"><strong>There's a city full of walls you can post complaints at /</strong><br><strong>All the doubters and believers adjust your receivers.</strong><br><strong>- Mos Def</strong></h4>
+        <p class="column-text" style="grid-column: 1 / span 1;grid-row: 2 / span 1;">In this phrase, Hip Hop icon Mos Def points to the importance that our artists have in engaging in social critique. Our own BIPOC communities have utilized art as a therapeutic way to release emotions, relate to one another, and survive and heal trauma. Our communities create and share art in direct response to economic, social, political, and personal harm; our artists use different forms of expression to take control of narratives, assert a community identity to outsiders, and find catharsis and healing. In conjunction, community-based art, cultural centers, and nightlife also contribute to our community’s sense of place, belonging, and safety within our intersecting identities. Art as activism often interprets and morphs traditional art practices into new ways to express ideas, frustrations, and identities.<br><br></p>
+        <p class="column-text" style="grid-column: 1 / span 1;grid-row: 2 / span 1;">Art-based research is an umbrella term for methods used by qualitative researchers to understand and address multifaceted and complex issues through creative arts; these methods can be implemented across the research process, including data collection, analysis, interpretation, and representation.<br><br></p>
+        <p class="column-text" style="grid-column: 2 / span 1;grid-row: 2 / span 1;">For our research team, understanding historically marginalized communities and their experiences within the food systems was our core inquiry. We wanted to engage our community in forms of artmaking as a therapeutic practice that can help our communities’ well-being, but also as a critical mode of research, especially in food systems and food justice work.&nbsp;<br><br></p>
+        <p class="column-text author-credit" style="grid-column: 2 / span 1;grid-row: 2 / span 1;">- Santos Flores, Art as Method Researcher</p>
+    </div>
+    <div id="art-section-header" class="section-heading apricot-bg flex-center">
+        <h2>Section One: Art</h2>
+    </div>
+    <div id="northstar-info" class="fullscreen-div flex-center"><img class="background-image" src="assets/img/uproot/northstar-cover-cg.webp" style="z-index: -1;">
+        <h3>NorthStar Church of the Arts</h3>
+        <p class="p-over-image">NorthStar Church of the Arts is a multidisciplinary artist led 501(c)3 nonprofit organization. Their mission is to harness the transformative power of art for social change, with a steadfast commitment to centering creative spiritual expression and fostering deep healing for artists of color. Housed in a historic church originally designed for the deaf community, the organization is a sanctuary for marginalized creatives. NorthStar stands as an illuminating nexus that expands its historical roots, providing holistic material support for artists and cultivating a safe haven for cross-cultural collaboration and community engagement.</p>
+    </div>
+    <div id="northstar-gallery" class="fullscreen-div flex-center" style="background: #434345;">
+        <p id="ns-instructions" class="gallery-instructions">Use the side buttons or arrow keys to view pieces displayed at Northstar Church of the Arts.</p><img id="ns-gallery-bg-img" class="background-image" src="assets/img/uproot/orange-noise-5.webp">
+        <div class="interactive-gallery"><svg
+    id="ns-left-arrow"
+    class="gallery-nav-icon"
+     style="margin-left:20px"
+   viewBox="0 0 16 16"
+   width="1em"
+   height="1em"
+   xmlns="http://www.w3.org/2000/svg">
+    
+  <circle
+     style="fill:#000000;
+            fill-opacity:1;
+            stroke:none"
+     cx="8"
+     cy="8"
+     r="8" />
+  <path
+     fill-rule="evenodd"
+     d="M 14.176471,8 A 6.1764709,6.1764709 0 1 1 1.8235292,8 6.1764709,6.1764709 0 0 1 14.176471,8 M 0.94117625,8 A 7.0588239,7.0588239 0 1 0 15.058824,8 7.0588239,7.0588239 0 0 0 0.94117625,8 M 11.088236,7.5588235 a 0.4411765,0.4411765 0 0 1 0,0.882353 H 5.9767642 L 7.8711769,10.334706 A 0.44173385,0.44173385 0 0 1 7.246471,10.959412 L 4.5994122,8.3123529 a 0.44117647,0.44117647 0 0 1 0,-0.6247058 L 7.246471,5.0405882 A 0.44173378,0.44173378 0 1 1 7.8711769,5.6652941 L 5.9767642,7.5588235 Z"
+     id="path182"
+        style="fill:#fffdeb;fill-opacity:1;stroke:none"/>
+</svg>
+
+            <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;"><img id="ns-gallery-image" src="assets/img/uproot/ns-art/ortega.webp" style="max-width: 70vw;max-height: 70vh;transition: opacity .2s ease-in-out;">
+                <div id="ns-gallery-caption-holder" class="caption-holder">
+                    <p class="gallery-caption">Renzo Ortega<br><em>The Tragedy of The Corn</em> (2019)<br>Acrylic and soil on canvas</p>
+                </div>
+            </div><svg
+    id="ns-right-arrow"
+    class="gallery-nav-icon"
+     style="margin-right:20px"
+   viewBox="0 0 16 16"
+   version="1.1"
+   width="1em"
+   height="1em"
+   xmlns="http://www.w3.org/2000/svg">
+  <circle
+     style="fill:#000000;
+            fill-opacity:1;
+            stroke:none"
+     cx="8"
+     cy="8"
+     r="8" />
+  <path
+     fill-rule="evenodd"
+     d="M 1.8235292,8 A 6.1764708,6.1764708 0 1 0 14.176471,8 6.1764708,6.1764708 0 0 0 1.8235292,8 M 15.058824,8 A 7.0588238,7.0588238 0 1 1 0.94117625,8 7.0588238,7.0588238 0 0 1 15.058824,8 M 4.9117645,7.5588235 a 0.4411765,0.4411765 0 0 0 0,0.882353 H 10.023236 L 8.1288233,10.334706 a 0.44173385,0.44173385 0 0 0 0.6247059,0.624706 L 11.400588,8.3123529 a 0.44117647,0.44117647 0 0 0 0,-0.6247058 L 8.7535292,5.0405882 A 0.44173378,0.44173378 0 1 0 8.1288233,5.6652941 l 1.8944127,1.8935294 z"
+     style="fill:#fffdeb;fill-opacity:1;stroke:none"/>
+</svg>
+
+        </div>
+    </div>
+    <div id="earthseed-info" class="fullscreen-div flex-center"><img class="background-image" src="assets/img/uproot/earthseed-cover.webp" style="z-index: -1;">
+        <h3 style="color: var(--durmpac-purple);">Earthseed Land Collective</h3>
+        <p class="p-over-image">The Earthseed Land Collective is a community of Black and Latinx people working together on 48 acres of land in Durham, North Carolina. The collective was founded in 2012 and is inspired by Octavia Butler's Parable series, which tells the story of a religion established in the midst of a dystopian social collapse. The members of Earthseed are committed to developing the relationships and practices necessary to remember and reimagine their relationship to themselves, each other and the land in pursuit and practice of collective liberation.</p>
+    </div>
+    <div id="earthseed-gallery" class="fullscreen-div flex-center" style="background: #434345;"><img id="es-gallery-bg-img" class="background-image" src="assets/img/uproot/green-noise-1.webp">
+        <div class="interactive-gallery">
+            <p id="es-instructions" class="gallery-instructions">Use the side buttons or arrow keys to view pieces displayed at Earthseed Land Collective.</p><svg
+    id="es-left-arrow"
+    class="gallery-nav-icon"
+     style="margin-left:20px"
+   viewBox="0 0 16 16"
+   width="1em"
+   height="1em"
+   xmlns="http://www.w3.org/2000/svg">
+    
+  <circle
+     style="fill:#000000;
+            fill-opacity:1;
+            stroke:none"
+     cx="8"
+     cy="8"
+     r="8" />
+  <path
+     fill-rule="evenodd"
+     d="M 14.176471,8 A 6.1764709,6.1764709 0 1 1 1.8235292,8 6.1764709,6.1764709 0 0 1 14.176471,8 M 0.94117625,8 A 7.0588239,7.0588239 0 1 0 15.058824,8 7.0588239,7.0588239 0 0 0 0.94117625,8 M 11.088236,7.5588235 a 0.4411765,0.4411765 0 0 1 0,0.882353 H 5.9767642 L 7.8711769,10.334706 A 0.44173385,0.44173385 0 0 1 7.246471,10.959412 L 4.5994122,8.3123529 a 0.44117647,0.44117647 0 0 1 0,-0.6247058 L 7.246471,5.0405882 A 0.44173378,0.44173378 0 1 1 7.8711769,5.6652941 L 5.9767642,7.5588235 Z"
+     id="path182"
+        style="fill:#fffdeb;fill-opacity:1;stroke:none"/>
+</svg>
+
+            <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;"><img id="es-gallery-image" src="assets/img/uproot/es-art/bevelyn-ukah-heirloom.webp" style="max-width: 70vw;max-height: 70vh;transition: opacity .2s ease-in-out;">
+                <div id="es-gallery-caption-holder" class="caption-holder">
+                    <p class="gallery-caption">Bevelyn Ukah<br><em>Heirloom,&nbsp;</em>(2024)<br>Acrylic, markers, ink</p>
+                </div>
+            </div><svg
+    id="es-right-arrow"
+    class="gallery-nav-icon"
+     style="margin-right:20px"
+   viewBox="0 0 16 16"
+   version="1.1"
+   width="1em"
+   height="1em"
+   xmlns="http://www.w3.org/2000/svg">
+  <circle
+     style="fill:#000000;
+            fill-opacity:1;
+            stroke:none"
+     cx="8"
+     cy="8"
+     r="8" />
+  <path
+     fill-rule="evenodd"
+     d="M 1.8235292,8 A 6.1764708,6.1764708 0 1 0 14.176471,8 6.1764708,6.1764708 0 0 0 1.8235292,8 M 15.058824,8 A 7.0588238,7.0588238 0 1 1 0.94117625,8 7.0588238,7.0588238 0 0 1 15.058824,8 M 4.9117645,7.5588235 a 0.4411765,0.4411765 0 0 0 0,0.882353 H 10.023236 L 8.1288233,10.334706 a 0.44173385,0.44173385 0 0 0 0.6247059,0.624706 L 11.400588,8.3123529 a 0.44117647,0.44117647 0 0 0 0,-0.6247058 L 8.7535292,5.0405882 A 0.44173378,0.44173378 0 1 0 8.1288233,5.6652941 l 1.8944127,1.8935294 z"
+     style="fill:#fffdeb;fill-opacity:1;stroke:none"/>
+</svg>
+
+        </div>
+    </div>
+    <div id="art-reflection" class="fullscreen-div flex-center"><img class="background-image" src="assets/img/uproot/leaves-texture.webp" style="z-index: -1;">
+        <h1 class="hcopy" style="grid-column: 1 / span 1;grid-row: 1 / span 1;">reflection</h1>
+        <h4 style="text-align: center;">UPROOT has been a way to honor ourselves and our communities.<br>- Isabel Lu</h4>
+        <p class="column-text" style="grid-column: 1 / span 1;grid-row: 2 / span 1;"><span style="color: rgb(0, 0, 0);">Studying food systems, nutrition, and public health in a Western academic setting detached me from my ancestors, the land, and my body. There’s a connection we have with each other that can’t quite be measured in traditionally Western science methods. Black, Indigenous, and Eastern communities have always understood and honored this interdependence between land, food, body, and spirit. Creating and experiencing other people’s art–through movement, visual art, music, and food–is integral to understanding our individual and collective experiences.</span><br><br></p>
+        <p class="column-text" style="grid-column: 1 / span 1;grid-row: 2 / span 1;">UPROOT has been a way to honor ourselves and our communities, to find and create spaces of grief, joy, and celebration, and to dream of a more equitable future. These works explore living in a food apartheid, creating resiliency through mutual aid, and finding solace in the art of nature. It has truly been an honor to work and connect with this community of artists, and to share space with each other.<br><br></p>
+        <p class="column-text author-credit" style="grid-column: 1 / span 1;grid-row: 2 / span 1;"><span style="color: rgb(0, 0, 0);">- Isabel Lu, UPROOT</span>&nbsp;<span style="color: rgb(0, 0, 0);">Co-Curator</span></p>
+    </div>
+    <div id="experience-section-header" class="section-heading apricot-bg flex-center">
+        <h2>Section Two: Experiences</h2>
+    </div>
+    <div id="workshop-spreads" class="fullscreen-div purple-bg flex-center"><img></div>
+    <div id="credits-section-header" class="section-heading apricot-bg flex-center">
+        <h2>Credits and Acknowledgements</h2>
+    </div>
+    <div id="team-cards" class="fullscreen-div green-bg flex-center">
+        <div id="team-card-grid" style="width: 90%;display: grid;place-items: start center;grid-gap: var(--large-margin);grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <div class="team-member-card"><img class="card-image" src="assets/img/uproot/headshot-illos/niesha_illo.webp">
+                <p class="card-paragraph card-name"><span style="background-color: transparent;">Niesha Douglas</span></p>
+                <p class="card-paragraph card-position"><span style="background-color: transparent;">Community-Based Research Scholar</span></p>
+                <p class="card-paragraph card-bio">Niesha is a community-based Research Scholar for the Center for Environmental and Farming Systems at North Carolina State University studying food systems in rural southeastern North Carolina.</p>
+            </div>
+            <div class="team-member-card"><img class="card-image" src="assets/img/uproot/headshot-illos/santos-illo.webp">
+                <p class="card-paragraph card-name"><span style="background-color: transparent;">Santos Flores</span></p>
+                <p class="card-paragraph card-position"><span style="background-color: transparent;">Lead Researcher</span></p>
+                <p class="card-paragraph card-bio">Santos Flores is an associate researcher, professor, data analyst and cultural educator with an interest in models of conflict transformation and social justice for application in community engagement.</p>
+            </div>
+            <div class="team-member-card"><img class="card-image" src="assets/img/uproot/headshot-illos/daphne_illo.webp">
+                <p class="card-paragraph card-name"><span style="background-color: transparent;">Daphne Hines</span></p>
+                <p class="card-paragraph card-position">Communications Specialist</p>
+                <p class="card-paragraph card-bio">Daphne is a Communications Specialist and Social Advocate with a focus on strategy, digital marketing, community engagement, and amplifying community voices for greater societal equity &amp; wellness.</p>
+            </div>
+            <div class="team-member-card"><img class="card-image" src="assets/img/uproot/headshot-illos/isabel-illo.webp">
+                <p class="card-paragraph card-name"><span style="background-color: transparent;">Isabel</span>&nbsp;Lu</p>
+                <p class="card-paragraph card-position">UPROOT Co-Curator</p>
+                <p class="card-paragraph card-bio">Isabel Lu is a painter and researcher based in Raleigh. Isabel studied nutritional science at Cornell University and then public health and dietetics as a graduate student at UNC Chapel Hill.</p>
+            </div>
+            <div class="team-member-card"><img class="card-image" src="assets/img/uproot/headshot-illos/bev_illo.webp">
+                <p class="card-paragraph card-name">Bevelyn Ukah</p>
+                <p class="card-paragraph card-position">Director of CORE &amp;<br>UPROOT Managing Director</p>
+                <p class="card-paragraph card-bio">Bevelyn Afor Ukah is a consultant, facilitator, and self-taught mixed media artist, born and raised in Atlanta, Georgia, within a multicultural Black, Nigerian American family. Her life’s work focuses on exploring cultural connections and fostering equity through art and community engagement.</p>
+            </div>
+            <div class="team-member-card"><img class="card-image" src="assets/img/uproot/headshot-illos/nori-illo.webp">
+                <p class="card-paragraph card-name">Nori McDuffie</p>
+                <p class="card-paragraph card-position">UPROOT&nbsp;Head Co-Curator</p>
+                <p class="card-paragraph card-bio">Nori is an interdisciplinary artist whose work beautifully expresses his love, admiration, and reverence for Black culture, tradition, performance, spirituality, ephemera, and the human experience. Nori is also the Project Facilitator for Durham Powerful Arts Collective (DurmPAC).</p>
+            </div>
+            <div class="team-member-card"><img class="card-image" src="assets/img/uproot/headshot-illos/celia-illo.webp">
+                <p class="card-paragraph card-name">Celia Ruley Donnelly</p>
+                <p class="card-paragraph card-position">Designer &amp; Illustrator</p>
+                <p class="card-paragraph card-bio">Celia is an illustrator and designer from Durham, North Carolina. She is currently based in Richmond, Virginia, where she makes comics and cooks dinner for her friends.</p>
+            </div>
+            <div class="team-member-card"><img class="card-image" src="assets/img/uproot/headshot-illos/jett-illo.png">
+                <p class="card-paragraph card-name">Jett Pavlica</p>
+                <p class="card-paragraph card-position">Designer</p>
+                <p class="card-paragraph card-bio">Jett Pavlica (b. 2000, they/them) is a computational artist from Durham, North Carolina exploring classic algorithms, physical simulations, and generative organic forms while creating public art events in their hometown.</p>
+            </div>
+        </div>
+    </div>
+    <div id="credits" class="fullscreen-div cream-bg flex-center">
+        <div id="credits-grid" class="zine-grid">
+            <ul class="credits-list" style="/*grid-column: 1 / span 1;*/">
+                <li class="bold-li">UPROOT Team Members / Art as Method</li>
+                <li><span style="background-color: transparent;">Niesha Douglas</span></li>
+                <li><span style="background-color: transparent;">Santos Flores</span></li>
+                <li><span style="background-color: transparent;">Christopher&nbsp;</span>Gillespie</li>
+                <li><span style="background-color: transparent;">Daphne Hines</span></li>
+                <li><span style="background-color: transparent;">Isabel Lu</span></li>
+                <li><span style="background-color: transparent;">Bevelyn Ukah</span></li>
+            </ul>
+            <ul class="credits-list" style="/*grid-column: 2 / span 1;*/">
+                <li class="bold-li">UPROOT Team Members / DurmPAC</li>
+                <li>Nori McDuffie</li>
+                <li>Jett Pavlica</li>
+                <li>Celia Ruley Donnelly</li>
+            </ul>
+            <ul class="credits-list" style="/*grid-column: 1 / span 1;*/">
+                <li class="bold-li">Host Organization</li>
+                <li>Committee on Racial Equity (CORE) at CEFS</li>
+                <li class="bold-li">Partner Organizations</li>
+                <li>Black Women's Art Collective</li>
+                <li>Earthseed Land Collective</li>
+                <li>NC Climate Justice Collective (NCCJC)</li>
+                <li>Northstar Church of the Arts</li>
+                <li>The Palace International</li>
+            </ul>
+            <ul class="credits-list" style="/*grid-column: 2 / span 1;*/">
+                <li class="bold-li">Supporting Organizations</li>
+                <li><span style="background-color: transparent;">BCBS Foundation</span></li>
+                <li><span style="background-color: transparent;">Community Food Strategies</span></li>
+                <li>Greensboro Mutual Aid</li>
+                <li><span style="background-color: transparent;">Keussel Studio</span></li>
+                <li>Pupusas for Education</li>
+                <li><span style="background-color: transparent;">Southside Community Farm</span></li>
+                <li><span style="background-color: transparent;">WNC Earthmates</span></li>
+            </ul>
+            <ul class="credits-list" style="/*grid-column: 1 / span 1;*/">
+                <li class="bold-li">Workshop Leaders</li>
+                <li><span style="background-color: transparent;">Adé x dynamism</span></li>
+                <li>Gail Belvett</li>
+                <li>Imane El Ghazouani</li>
+                <li><span style="background-color: transparent;">Suzy Hasanin</span></li>
+                <li><span style="background-color: transparent;">King Sage</span></li>
+                <li><span style="background-color: transparent;">Saba Taj</span></li>
+                <li> Tuesday Villane</li>
+            </ul>
+            <ul class="credits-list" style="/*grid-column: 2 / span 1;*/">
+                <li class="bold-li">Supporting Individuals</li>
+                <li><span style="background-color: transparent;">Cleaster Cotton</span></li>
+                <li><span style="background-color: transparent;">Esoderic</span></li>
+                <li><span style="background-color: transparent;">Sayaka Hickey</span></li>
+                <li><span style="background-color: transparent;">Talar Hso</span></li>
+                <li><span style="background-color: transparent;">Aaron Kahlil</span></li>
+                <li><span style="background-color: transparent;">Danny Peña</span></li>
+                <li><span style="background-color: transparent;">Aldair Sobers</span></li>
+                <li><span style="background-color: transparent;">Ree Ree Wei</span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="authors-header" class="section-heading purple-bg flex-center">
+        <div style="display: flex;height: 100px;margin-bottom: var(--med-margin);"><img src="assets/img/uproot/logos/durmpac%20logo.svg"><img class="logo-img" src="assets/img/uproot/logos/jett-sig.svg" style="display: flex;"><img class="logo-img" src="assets/img/uproot/logos/CORE_Logo-Black.png"></div>
+        <p style="text-align: center;line-height: 1.6rem;font-size: 1.1rem;">Uproot Zine was curated by Jett Pavlica and Celia Ruley, the design team at DurmPAC.<br>This digital edition of the zine was designed and realized by Jett Pavlica.<br>The print edition of the zine was designed and realized by Celia Ruley.</p>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/sketch.js"></script>
+    <script src="assets/js/l-system.js"></script>
+    <script src="assets/js/es-gallery.js"></script>
+    <script src="assets/js/gallery-keyboard-nav.js"></script>
+    <script src="assets/js/ns-gallery.js"></script>
+</body>
+
+</html>

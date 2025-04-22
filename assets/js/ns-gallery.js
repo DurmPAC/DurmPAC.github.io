@@ -151,7 +151,7 @@ var nsInstructions = document.getElementById('ns-instructions');
 var nsDomGalleryImage = document.getElementById('ns-gallery-image');
 var nsDomBackgroundImage = document.getElementById('ns-gallery-bg-img');
 var nsDomCaptionHolder = document.getElementById('ns-gallery-caption-holder');
-
+var nspreLoadedImg;
 
 function populateImageNS() {
   // fetch current image object data
@@ -188,6 +188,11 @@ function populateImageNS() {
       '<br>' +
       'Viewing image ' + (nsImageIndex + 1) + ' / ' + nsPieces.length;
   }, 500);
+    
+    // preload next image
+    let nextImgIndex = (nsImageIndex + 1) % nsPieces.length;
+    nspreLoadedImg = new Image()
+    nspreLoadedImg.src = nsPieces[nsImageIndex].imgURL;
 
   // randomize background on loop
   if (nsImageIndex == 0) {

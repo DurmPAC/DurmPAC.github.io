@@ -192,7 +192,7 @@ function populateImageNS() {
     // preload next image
     let nextImgIndex = (nsImageIndex + 1) % nsPieces.length;
     nspreLoadedImg = new Image()
-    nspreLoadedImg.src = nsPieces[nsImageIndex].imgURL;
+    nspreLoadedImg.src = nsPieces[nextImgIndex].imgURL;
 
   // randomize background on loop
   if (nsImageIndex == 0) {

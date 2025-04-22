@@ -135,6 +135,8 @@ var esInstructions = document.getElementById('es-instructions');
 var esDomGalleryImage = document.getElementById('es-gallery-image');
 var esDomBackgroundImage = document.getElementById('es-gallery-bg-img');
 var esDomCaptionHolder = document.getElementById('es-gallery-caption-holder');
+var espreLoadedImg;
+
 
 function populateImageES() {
   // fetch current image object data
@@ -167,6 +169,11 @@ function populateImageES() {
         '<br>' +
         'Viewing image ' + (esImageIndex + 1) + ' / ' + esPieces.length;
   }, 500);
+    
+    // preload next image
+    let nextImgIndex = (esImageIndex + 1) % esPieces.length;
+    espreLoadedImg = new Image()
+    espreLoadedImg.src = esPieces[nextImgIndex].imgURL;
 
   // randomize background on loop
   if (esImageIndex == 0) {

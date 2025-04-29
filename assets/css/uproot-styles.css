@@ -58,6 +58,11 @@
   transition: opacity .2s ease-in-out;
 }
 
+.exp-image {
+  max-width: 95%;
+  max-height: 90vh;
+}
+
 .caption-holder {
   width: 100%;
   display: flex;
